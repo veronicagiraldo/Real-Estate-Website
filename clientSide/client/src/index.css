@@ -1,19 +1,33 @@
-/* .contact{
-  color: black;
-} */
 h1{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Myriad Pro', sans-serif;
 }
 body{
   font-family: 'Montserrat', sans-serif;
 }
 .Real-Estate{
-  background-color: #006064;  
+  /* background-color: #006064;   */
 }
 .navbar-wrapper{
-  background-color: #00838F;
+  /* background-color: #00838F; */
 }
-.footer{
-  background-color: DARKCYAN;
+/* .footer{
+  background-color: #002B2E;
+} */
+.home{
+  /* float: left; */
+  /* width: 50%; */
 }
-
+.misty, .charles, .couple2{
+  height: 200px;
+  width: 200px;
+}
+.nav-link{
+  float: right;
+  justify-items: right;
+}
+/* .navbar-wrapper{
+  display: hidden;
+} */
+/* .navLinks{
+  float: left;
+} */

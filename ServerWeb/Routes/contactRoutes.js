@@ -14,7 +14,7 @@ contactRouter.route('/')
   })
   .post((req, res, next) => {
     const contact = new Contact(req.body);
-    contact.user = req.user._id;
+    // contact.user = req.user._id;
     contact.save((err, savedContact) => {
       if (err) {
         res.status(500)

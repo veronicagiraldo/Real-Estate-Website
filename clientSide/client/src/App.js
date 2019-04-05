@@ -13,8 +13,6 @@ import Footer from './Footer';
 // import logo from './logo.svg';
 
 function App () {
-
-    // const { token, logout} = this.props
     return (
       <div className="Real-Estate">
        <h1>MV Realtors</h1>
@@ -23,10 +21,10 @@ function App () {
           <Switch>
             <Route path="/signup" component={Signup}/>
             <Route path="/login" component={Login}/>
-            <Route path="/signup" component={Signup}/>
-                <Route path="/login" component={Login}/>
+            {/* <Route path="/signup" component={Signup}/>
+            <Route path="/login" component={Login}/> */}
                 {/* <Route path="/todos" component={TodoList}/> */}
-                <Route exact path="/" render={() => <Redirect to="/todos"/>}/>
+                <Route exact path="/" render={() => <Redirect to="/home"/>}/>
 
             <ProtectedRoute path ="/list" component={Listing}/>
             <Route exact path ='/' component ={Home}/>

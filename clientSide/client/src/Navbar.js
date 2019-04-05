@@ -28,11 +28,10 @@ function Navbar (props){
             </div>
         </React.Fragment>
       }
-    
         <Link className="navLinks" to='/' >Home</Link>
         <Link className="navLinks" to='/About' >About</Link>
         <Link className="navLinks" to='/Blog' >Blog</Link>
-        <Link className="navLinks" to='/Contact'>Contact Us</Link>
+        <Link className="navLinks" to='/Contact'>Contact</Link>
         {/* <button onClick={props.logout}>Logout</button> */}
       </div>
     )

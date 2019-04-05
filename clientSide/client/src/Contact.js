@@ -6,7 +6,10 @@ class Contact extends React.Component{
   constructor(){
     super()
     this.state = {
-      fullName: ""
+      fullName: "",
+      phone: "",
+      email: "",
+      message: ""
     }
   }
   handleChange =(e) => {
@@ -35,46 +38,45 @@ class Contact extends React.Component{
     return(
     
       <div className="contact">
-      HELLO
         <form onSubmit={this.handleSubmit}>
-        <h2>Let us reach out to you</h2>
-          <input
+        <h2>WE NEED TO TALK </h2>
+         Full Name:<input
               onChange={this.handleChange}
               value={this.state.fullName}
               name='fullName'
               type="text"
               placeholder="Full Name"
-               />
-         <input
+               /><br></br>
+         Phone Number:<input
               onChange={this.handleChange}
               value={this.state.phone}
               name='phone'
               type="number"
               placeholder="Phone Number"
-               />
-        <input 
+               /><br></br>
+        Email Address:<input 
               onChange={this.handleChange}
               value={this.state.email}
               name="email"
               type="text"
               placeholder="email address"
-              />
-
-        <input 
+              /><br></br>
+        Message:<input 
               onChange={this.handleChange}
               value={this.state.message}
               name="message"
               type="text"
-              placeholder="Questions/Comments"
+              placeholder=""
               />
-        <button type="submit">request</button>
+              <br></br>
+        <button type="submit">Let's talk</button>
         </form>
 
-        <h1>Contact us form</h1>
+        {/* <h1>Contact us form</h1>
         <h3>Full Name</h3>
         <h3>Phone Number</h3>
         <h3>email address:</h3>
-        <h3>message/comment</h3>
+        <h3>message/comment</h3> */}
       </div>
     )
   }

@@ -6,7 +6,7 @@ class Blog extends React.Component{
       <div className="blogBody">
         <h2 className="blogTitle">Blog</h2>
         <div className="blogContainer">
-        <h3>hello</h3>
+        <h3>Blog</h3>
         </div>
       </div>
     )

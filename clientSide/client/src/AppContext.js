@@ -55,7 +55,7 @@ class UserProvider extends React.Component{
       })
    }
   addContact = (savedContact) => {
-    return axios.post('/api/contact', savedContact)
+    return axios.post('/contact', savedContact)
       .then(res => {
         this.setState(prevState => {
           return { contact: [...prevState.contact, res.data]}
@@ -63,7 +63,6 @@ class UserProvider extends React.Component{
         return res;
     })
   }
-
  
   signup = (userInfo) => {
     return listAxios.post('/auth/signup', userInfo)

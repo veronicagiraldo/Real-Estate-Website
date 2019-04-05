@@ -20,7 +20,7 @@ app.use('/auth', require("./Routes/authRoutes"));
 // contact route?
 app.use("/api", expressJwt({secret: process.env.SECRET}));
 app.use('/api/list', require("./Routes/webRoutes"))
-app.use('/api/contact', require('./Routes/contactRoutes'))
+app.use('/contact', require('./Routes/contactRoutes'))
 
 
 
