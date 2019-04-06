@@ -10,12 +10,14 @@ import Signup from './Auth/Signup';
 import Login from './Auth/Login';
 import ProtectedRoute from "./Auth/ProtectedRoute";
 import Footer from './Footer';
+import Profile from '../src/Auth/Profile';
+
 // import logo from './logo.svg';
 
 function App () {
     return (
       <div className="Real-Estate">
-       <h1>MV Realtors</h1>
+       {/* <h1>MV Realtors</h1> */}
         <header className="AppContainer">
           <Navbar />
           <Switch>
@@ -26,8 +28,8 @@ function App () {
                 {/* <Route path="/todos" component={TodoList}/> */}
                 <Route exact path="/" render={() => <Redirect to="/home"/>}/>
 
-            <ProtectedRoute path ="/list" component={Listing}/>
-            <Route exact path ='/' component ={Home}/>
+            <ProtectedRoute path ="/profile" component={Profile}/>
+            <Route exact path ='/home' component ={Home}/>
             <Route path ='/About' component ={About}/>
             <Route path ='/Blog' component ={Blog}/>
             <Route path ='/Contact' component={Contact}/>

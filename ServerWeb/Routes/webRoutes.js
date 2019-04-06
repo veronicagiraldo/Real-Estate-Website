@@ -2,12 +2,6 @@ const express = require('express');
 const webRouter = express.Router();
 const List = require('../Model/listSchema');
 
-// const web = require('../Model/websiteSchema')
-// webRouter.route('/contact')
-//   // .get((req, res, next) => {
-
-//   // })
-//   //   .
 webRouter.route('/')
   .get((req, res, next) => {
     List.find({user: req.user._id},(err, lists) => {

@@ -71,12 +71,6 @@ class Contact extends React.Component{
               <br></br>
         <button type="submit">Let's talk</button>
         </form>
-
-        {/* <h1>Contact us form</h1>
-        <h3>Full Name</h3>
-        <h3>Phone Number</h3>
-        <h3>email address:</h3>
-        <h3>message/comment</h3> */}
       </div>
     )
   }

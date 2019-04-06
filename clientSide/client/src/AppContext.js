@@ -18,22 +18,27 @@ class UserProvider extends React.Component{
       list: [],
       contact: [],
       user: JSON.parse(localStorage.getItem('user')) || {},
-      token: localStorage.getItem('token') || ""
+      token: localStorage.getItem('token') || "",
+      feed: []
     }
   }
 
-  componentDidMount(){
-    this.addContact();
+  getInsta = () => {
+    return axios.get('/feed')
+      .then(response => {
+        this.setState({feed: response.data.data});
+      })
   }
+
   getList = () => {
-    return axios.get('/api/list')
+    return listAxios.get('/api/list')
       .then(response => {
         this.setState({ list: response.data});
         return response;
       })
   }
   addList = (newList) => {
-    return axios.post('/api/list', newList)
+    return listAxios.post('/api/list', newList)
       .then(response => {
         this.setState(prevState => {
           return { list: [...prevState.list, response.data]}
@@ -43,7 +48,7 @@ class UserProvider extends React.Component{
   }
 
   deleteList = (listId) => {
-    return axios.put(`/api/list/${listId}`)
+    return listAxios.put(`/api/list/${listId}`)
       .then( response => {
         this.setState(prevState => {
           const updatedList = prevState.list.filter(list => {
@@ -54,16 +59,37 @@ class UserProvider extends React.Component{
         return response;
       })
    }
+   getContact = () => {
+    // console.log("hello")
+     return axios.get('/contact')
+      .then(response => {
+        this.setState({contact: response.data})
+        return response;
+      })
+   }
+ 
   addContact = (savedContact) => {
     return axios.post('/contact', savedContact)
       .then(res => {
         this.setState(prevState => {
           return { contact: [...prevState.contact, res.data]}
         });
-        return res;
+        return res.data;
     })
   }
- 
+  deleteContact =(contactId) => {
+    return axios.delete(`/contact/${contactId}`)
+      .then(response => {
+        this.setState(prevState => {
+          const updateContact = prevState.contact.filer(contact => {
+            return contact._id !== contactId
+          })
+          return {contact: updateContact}
+        })
+        return response;
+      })
+  }
+
   signup = (userInfo) => {
     return listAxios.post('/auth/signup', userInfo)
     .then(res => {
@@ -115,7 +141,10 @@ class UserProvider extends React.Component{
           getList: this.getList,
           addList: this.addList,
           deleteList: this.deleteList,
+          getContact: this.getContact,
           addContact: this.addContact,
+          deleteContact: this.deleteContact,
+          getInsta: this.getInsta,
           ...this.state,
           signup: this.signup,
           login: this.login,

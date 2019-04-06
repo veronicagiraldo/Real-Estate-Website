@@ -4,7 +4,7 @@ const Contact = require('../Model/contactSchema');
 
 contactRouter.route('/')
   .get((req, res, next) => {
-    Contact.find({user: req.user._id},(err, contact) => {
+    Contact.find((err, contact) => {
       if (err) {
         res.status(500)
         return next(err)
@@ -18,7 +18,7 @@ contactRouter.route('/')
     contact.save((err, savedContact) => {
       if (err) {
         res.status(500)
-        return next(err);
+        return err;
       }
       return res.status(201).send(savedContact)
     })
@@ -38,22 +38,22 @@ contactRouter.route('/:_id')
     return res.send(contact);
   });
 })
-// .put((req, res, next) => {
-//   Contact.findAndModify(
-//     {_id: req.params._id, user: req.user._id},
-//     req.body,
-//     {new: true},
-//     (err, contact) => {
-//       if (err) {
-//         res.status(500)
-//         return next(err);
-//       };
-//       return res.send(contact);
-//     }
-//   );
-// })
+.put((req, res, next) => {
+  Contact.findAndModify(
+    {_id: req.params._id, user: req.user._id},
+    req.body,
+    {new: true},
+    (err, contact) => {
+      if (err) {
+        res.status(500)
+        return next(err);
+      };
+      return res.send(contact);
+    }
+  );
+})
 .delete((req, res, next) => {
-  Contact.findAndModify({_id: req.params._id, user: req.user._id}, (err, contact) => {
+  Contact.findAndModify({_id: req.params._id}, (err, contact) => {
     if (err){
       res.status(500);
       return next(err);
@@ -62,3 +62,5 @@ contactRouter.route('/:_id')
   });
 });
 module.exports = contactRouter;
+
+// you may need to delete the user for contact routes

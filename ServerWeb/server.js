@@ -18,11 +18,10 @@ mongoose.connect('mongodb://localhost:27017/list', {useNewUrlParser: true})
 
 app.use('/auth', require("./Routes/authRoutes"));
 // contact route?
+app.use('/feed', require('./Routes/feedRoutes'))
 app.use("/api", expressJwt({secret: process.env.SECRET}));
 app.use('/api/list', require("./Routes/webRoutes"))
 app.use('/contact', require('./Routes/contactRoutes'))
-
-
 
 app.use((err, req, res, next) => {
   console.error(err);
