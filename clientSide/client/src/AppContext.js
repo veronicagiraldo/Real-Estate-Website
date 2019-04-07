@@ -77,11 +77,20 @@ class UserProvider extends React.Component{
         return res.data;
     })
   }
+  editContact = (_id, updateContact) => {
+    return axios.post(`/contact${_id}`, updateContact)
+      .then(res => {
+        this.setState(prevState => ({
+          contact: prevState.contact.map(contact => contact._id === _id ? contact = res.data : contact )
+        }) 
+        )
+    })
+  }}
   deleteContact =(contactId) => {
     return axios.delete(`/contact/${contactId}`)
       .then(response => {
         this.setState(prevState => {
-          const updateContact = prevState.contact.filer(contact => {
+          const updateContact = prevState.contact.filter(contact => {
             return contact._id !== contactId
           })
           return {contact: updateContact}
@@ -133,9 +142,9 @@ class UserProvider extends React.Component{
     this.props.signup(this.state)
     .then(() => this.props.history.push('/list'))
   }
-
-  render(){
-    return(
+  
+  render() {
+    return (
       <UserContext.Provider 
         value={{
           getList: this.getList,
@@ -143,6 +152,7 @@ class UserProvider extends React.Component{
           deleteList: this.deleteList,
           getContact: this.getContact,
           addContact: this.addContact,
+          editContact: this.editContact,
           deleteContact: this.deleteContact,
           getInsta: this.getInsta,
           ...this.state,
@@ -155,8 +165,8 @@ class UserProvider extends React.Component{
         </UserContext.Provider>
     )
   }
-}
-export default UserProvider
+
+export default UserProvider;
 
 export const withContext = C => props => (
   <UserContext.Consumer>
