@@ -1,5 +1,6 @@
 import React from 'react';
 import {withContext} from './AppContext';
+import './blog.css';
 
 class Blog extends React.Component{
   componentDidMount(){
@@ -7,19 +8,17 @@ class Blog extends React.Component{
   }
   render(){
     // console.log(this.props)
-    const mapfeed = this.props.feed.map((feed) => {
+    const mapfeed = this.props.feed.map((feed, i) => {
       // console.log(feed.images.standard_resolution.url)
-      return<img src={feed.images.standard_resolution.url}></img>
+      return<img class="responsive-img" src={feed.images.standard_resolution.url} alt={'pic' + i}></img>
     } )
     
     return(
       <div className="blogBody">
-        <h2 className="blogTitle">Blog</h2>
+        <h2 className="blogTitle">BLOG</h2>
         <div className="blogContainer">
-        <h3>Blog</h3>
+        <h3>Follow @mvrealtors</h3>
         {mapfeed}
-
-        
         </div>
       </div>
     )

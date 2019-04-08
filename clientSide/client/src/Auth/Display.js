@@ -1,7 +1,7 @@
 import React from 'react';
 import { withContext } from '../AppContext';
 import List from './List';
-// import {Link, Switch, Route} from 'react-router-dom';
+import {Switch, Route} from 'react-router-dom';
 
 // const Display = () => {
 class Display extends React.Component{
@@ -12,9 +12,9 @@ class Display extends React.Component{
   
   render(){
     // console.log(this.props.lists)
-    const listingMapped = this.props.lists.map((list) =>{
+    const listingMapped = this.props.lists.map((list,i) =>{
       console.log(list)
-      return<h3>{list.title}{list.description}{list.price}<img className="displayImg"src={list.picture}></img></h3>
+      return<h3>{list.title}{list.description}{list.price}<img className="displayImg"src={list.picture} alt={'picture'+i}></img></h3>
     })
     return (
       <div className="listDisplay">
@@ -23,9 +23,9 @@ class Display extends React.Component{
       <div className="listDisplay">
       {listingMapped}
     </div>
-    {/* <Switch>
+    <Switch>
       <Route path="/list/:_id" component={List}/>
-      </Switch> */}
+      </Switch>
       </div>
     )
   }
