@@ -28,9 +28,7 @@ body{
   float: right;
   justify-items: right;
 }
-/* .navbar-wrapper{
-  display: hidden;
-} */
-/* .navLinks{
-  float: left;
-} */
+.displayImg{
+  height: 100px;
+  width: 100px;
+}

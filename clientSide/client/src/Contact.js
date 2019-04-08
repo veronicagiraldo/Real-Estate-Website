@@ -1,7 +1,6 @@
 import React from 'react';
 import { withContext} from './AppContext';
 
-
 class Contact extends React.Component{
   constructor(){
     super()

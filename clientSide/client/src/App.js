@@ -11,7 +11,7 @@ import Login from './Auth/Login';
 import Profile from '../src/Auth/Profile'
 import ProtectedRoute from "./Auth/ProtectedRoute";
 import Footer from './Footer';
-;
+import Display from './Auth/Display';
 
 // import logo from './logo.svg';
 
@@ -32,6 +32,7 @@ function App () {
             <Route path ='/Blog' component ={Blog}/>
             <Route path ='/Contact' component={Contact}/>
             <Route path ='/Listing' component={List}/>
+            <Route path ='/display' component={Display}/>
           </Switch>
           <Footer/>
         </header>

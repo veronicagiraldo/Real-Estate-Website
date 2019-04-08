@@ -13,9 +13,9 @@ class Listing extends React.Component{
       picture: ""
     }
   }
-  // componentDidMount(){
-  //   this.props.getList()
-  // }
+  componentDidMount(){
+    this.props.getList()
+  }
 
   handleList = (e) => {
     e.persist();
@@ -41,6 +41,7 @@ class Listing extends React.Component{
       .catch(err => console.error(err.data))
   }
   render(){
+    console.log(this.props)
     // const maplisting = lists.map((list, i) => <List key={i} list = {list}></List>)
     return(
       <div className="ListingContainer">

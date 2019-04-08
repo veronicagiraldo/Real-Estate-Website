@@ -11,6 +11,9 @@ class Home extends React.Component{
     return(
       <div className="homeContainer">
       <div className="home">
+        <h2>Our Mission:</h2>
+        <h2>To get you into the home of your dreams all while making your transition from Renter to Homeowner painless, flawless and joyous.  <br></br>
+Smile!….You’re Home!</h2>
         <h3>Misty & Charles Vasquez</h3>
         <h4>801.897.6430</h4>
         <h4>misty.vasquez@realtypath.com</h4>

@@ -28,12 +28,11 @@ function Navbar (props){
             </div>
         </React.Fragment>
       }
-        <Link className="navLinks" to='/' >Home</Link>
-        <Link className="navLinks" to='/About' >About</Link>
-        <Link className="navLinks" to='/Blog' >Blog</Link>
-        <Link className="navLinks" to='/Contact'>Contact</Link>
-        <Link className="navLinks" to='/list'>ontheMARKET</Link> 
-       
+        <Link className="navLinks" to='/home' >Home</Link>
+        <Link className="navLinks" to='/about' >About</Link>
+        <Link className="navLinks" to='/blog' >Blog</Link>
+        <Link className="navLinks" to='/contact'>Contact</Link>
+        <Link className="navLinks" to='/display'>ontheMARKET</Link> 
       </div>
     )
   }

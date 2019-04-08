@@ -6,9 +6,9 @@ class Blog extends React.Component{
     this.props.getInsta();
   }
   render(){
-    console.log(this.props)
+    // console.log(this.props)
     const mapfeed = this.props.feed.map((feed) => {
-      console.log(feed.images.standard_resolution.url)
+      // console.log(feed.images.standard_resolution.url)
       return<img src={feed.images.standard_resolution.url}></img>
     } )
     
