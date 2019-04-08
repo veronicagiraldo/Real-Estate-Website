@@ -39,7 +39,7 @@ contactRouter.route('/:_id')
   });
 })
 .put((req, res, next) => {
-  Contact.findAndModify(
+  Contact.findOneAndUpdate(
     {_id: req.params._id, user: req.user._id},
     req.body,
     {new: true},
@@ -53,7 +53,7 @@ contactRouter.route('/:_id')
   );
 })
 .delete((req, res, next) => {
-  Contact.findAndModify({_id: req.params._id}, (err, contact) => {
+  Contact.findOneAndDelete({_id: req.params._id}, (err, contact) => {
     if (err){
       res.status(500);
       return next(err);

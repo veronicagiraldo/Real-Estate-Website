@@ -18,7 +18,7 @@ function Navbar (props){
         :
         <React.Fragment>
           <div className="nav-link">
-            <Link to="/list">Listing </Link>
+            <Link to="/listing">Add to Listing </Link>
             </div>
           <div className="nav-link">
             <Link to="/profile">Profile</Link>
@@ -32,7 +32,8 @@ function Navbar (props){
         <Link className="navLinks" to='/About' >About</Link>
         <Link className="navLinks" to='/Blog' >Blog</Link>
         <Link className="navLinks" to='/Contact'>Contact</Link>
-        {/* <button onClick={props.logout}>Logout</button> */}
+        <Link className="navLinks" to='/list'>ontheMARKET</Link> 
+       
       </div>
     )
   }

@@ -21,7 +21,10 @@ class Contact extends React.Component{
   }
   clearInputs = () => {
     this.setState({
-      fullName: ""
+      fullName: "",
+      phone: '',
+      email: '',
+      message: '',
     })
   }
 

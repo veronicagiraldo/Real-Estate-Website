@@ -9,15 +9,13 @@ class Home extends React.Component{
  
   render(){
     return(
-      <div className="title">
-      Real Estate
+      <div className="homeContainer">
       <div className="home">
-        <h3>Misty Vasquez</h3>
-        <h3>801.897.6430</h3>
+        <h3>Misty & Charles Vasquez</h3>
+        <h4>801.897.6430</h4>
         <h4>misty.vasquez@realtypath.com</h4>
         {/* <img className="misty"src={misty} alt="misty"/> */}
-        <br></br>
-        <h3>Charles Vasquez</h3>
+        {/* <h3>Charles Vasquez</h3> */}
         <h3>801.870.0868</h3>
         <h4>charles.vasquez@reatlypath.com</h4>
         <img className="couple"src={couple2} alt="couple"/>

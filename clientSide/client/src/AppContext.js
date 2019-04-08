@@ -15,55 +15,59 @@ class UserProvider extends React.Component{
   constructor(){
     super()
     this.state = {
-      list: [],
-      contact: [],
+      lists: [],
+      contacts: [],
       user: JSON.parse(localStorage.getItem('user')) || {},
       token: localStorage.getItem('token') || "",
       feed: []
     }
   }
-
+// instagram feed 
   getInsta = () => {
     return axios.get('/feed')
       .then(response => {
         this.setState({feed: response.data.data});
       })
   }
-
+// listing information -get/post/put/delete
   getList = () => {
+    console.log("show my listings")
     return listAxios.get('/api/list')
       .then(response => {
-        this.setState({ list: response.data});
+        // console.log(response)
+        this.setState({ lists: response.data});
         return response;
       })
   }
   addList = (newList) => {
+    console.log('fired')
     return listAxios.post('/api/list', newList)
       .then(response => {
         this.setState(prevState => {
-          return { list: [...prevState.list, response.data]}
+          return { lists: [...prevState.lists, response.data]}
         });
         return response;
       })
   }
-
   deleteList = (listId) => {
     return listAxios.put(`/api/list/${listId}`)
       .then( response => {
         this.setState(prevState => {
-          const updatedList = prevState.list.filter(list => {
+          const updatedList = prevState.lists.filter(list => {
             return list._id !== listId
           })
-          return { list: updatedList}
+          return { lists: updatedList}
         })
         return response;
       })
    }
+  //  contact us information -get/post/delete
    getContact = () => {
     // console.log("hello")
      return axios.get('/contact')
       .then(response => {
-        this.setState({contact: response.data})
+        this.setState({contacts: response.data})
+        // console.log(this.state.contacts)
         return response;
       })
    }
@@ -72,7 +76,7 @@ class UserProvider extends React.Component{
     return axios.post('/contact', savedContact)
       .then(res => {
         this.setState(prevState => {
-          return { contact: [...prevState.contact, res.data]}
+          return { contacts: [...prevState.contacts, res.data]}
         });
         return res.data;
     })
@@ -81,19 +85,21 @@ class UserProvider extends React.Component{
     return axios.post(`/contact${_id}`, updateContact)
       .then(res => {
         this.setState(prevState => ({
-          contact: prevState.contact.map(contact => contact._id === _id ? contact = res.data : contact )
+          contacts: prevState.contacts.map(contact => contact._id === _id ? contact = res.data : contact )
         }) 
         )
     })
-  }}
+  }
   deleteContact =(contactId) => {
+    console.log("deleteme!")
     return axios.delete(`/contact/${contactId}`)
       .then(response => {
+        console.log("fired!")
         this.setState(prevState => {
-          const updateContact = prevState.contact.filter(contact => {
+          const updateContact = prevState.contacts.filter(contact => {
             return contact._id !== contactId
           })
-          return {contact: updateContact}
+          return {contacts: updateContact}
         })
         return response;
       })
@@ -143,7 +149,7 @@ class UserProvider extends React.Component{
     .then(() => this.props.history.push('/list'))
   }
   
-  render() {
+  render(){
     return (
       <UserContext.Provider 
         value={{
@@ -165,6 +171,7 @@ class UserProvider extends React.Component{
         </UserContext.Provider>
     )
   }
+}
 
 export default UserProvider;
 

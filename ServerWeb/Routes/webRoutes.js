@@ -5,6 +5,7 @@ const List = require('../Model/listSchema');
 webRouter.route('/')
   .get((req, res, next) => {
     List.find({user: req.user._id},(err, lists) => {
+      console.log("show the money!")
       if (err) {
         res.status(500)
         return next(err)
@@ -16,6 +17,7 @@ webRouter.route('/')
     const list = new List(req.body);
     list.user = req.user._id;
     list.save((err, newList) => {
+      console.log("am i working?")
       if (err) {
         res.status(500)
         return next(err);

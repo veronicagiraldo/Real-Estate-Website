@@ -14,11 +14,11 @@ const listSchema = new Schema ({
     type: String, 
     required: true, 
   },
-  // picture: {
-  //   type: String, 
-  //   required: true,
-  //   url: ""
-  // },
+  picture: {
+    type: String, 
+    required: true,
+    url: ""
+  },
   // picture2: {
   //   type: String, 
   //   required: true,

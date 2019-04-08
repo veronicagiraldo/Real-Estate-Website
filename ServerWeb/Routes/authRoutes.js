@@ -3,8 +3,6 @@ const User = require('../Model/user');
 const authRouter = express.Router();
 const jwt = require("jsonwebtoken");
 
-
-
 authRouter.post("/signup", (req, res, next) => {
   // console.log(req.body);
   User.findOne({username: req.body.username.toLowerCase()}, (err, existingUser) => {
