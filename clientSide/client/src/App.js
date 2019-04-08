@@ -1,6 +1,6 @@
 import React from 'react';
 import {Switch, Route, Redirect} from 'react-router-dom';
-import Navbar from './Navbar';
+import Nav from './Nav';
 import Home from './Home';
 import About from './About';
 import Blog from './Blog';
@@ -10,7 +10,7 @@ import Signup from './Auth/Signup';
 import Login from './Auth/Login';
 import Profile from '../src/Auth/Profile'
 import ProtectedRoute from "./Auth/ProtectedRoute";
-import Footer from './Footer';
+import Foot from './Foot';
 import Display from './Auth/Display';
 
 // import logo from './logo.svg';
@@ -18,9 +18,9 @@ import Display from './Auth/Display';
 function App () {
     return (
       <div className="Real-Estate">
-       <h1>MV Realtors</h1>
+       <h1 className="header">MV Realtors</h1>
         <header className="AppContainer">
-          <Navbar />
+          <Nav />
           <Switch>
             <Route path="/signup" component={Signup}/>
             <Route path="/login" component={Login}/>
@@ -34,7 +34,7 @@ function App () {
             <Route path ='/Listing' component={List}/>
             <Route path ='/display' component={Display}/>
           </Switch>
-          <Footer/>
+          <Foot/>
         </header>
       </div>
     );
