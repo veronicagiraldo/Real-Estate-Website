@@ -7,12 +7,14 @@ const ProfileList = (props) => {
     return(
      
       <div class="profileDisplay">
+      <div class="profileInfo">
         <h4>Contact</h4>
         <p>Full Name: {props.contact.fullName}</p>
         <p>Email:{props.contact.email}</p>
         <p>Phone:{props.contact.phone}</p>
         <p>Messages:{props.contact.message}</p>
         <button class="waves-effect waves-teal btn-flat"onClick={() => props.deleteContact(_id)}>Delete</button>
+        </div>
       </div>
     )
 

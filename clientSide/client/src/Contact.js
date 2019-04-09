@@ -38,30 +38,29 @@ class Contact extends React.Component{
   render(){
     // mapped out form 
     return(
-    
-      <div className="contact">
-        <form onSubmit={this.handleSubmit}>
+      <div className="contactContainer">
+        <form class="form" onSubmit={this.handleSubmit}>
         <h2>WE NEED TO TALK </h2>
          Full Name:<input
               onChange={this.handleChange}
               value={this.state.fullName}
               name='fullName'
               type="text"
-              placeholder="Full Name"
+              // placeholder="Full Name"
                /><br></br>
          Phone Number:<input
               onChange={this.handleChange}
               value={this.state.phone}
               name='phone'
               type="number"
-              placeholder="Phone Number"
+              // placeholder="Phone Number"
                /><br></br>
         Email Address:<input 
               onChange={this.handleChange}
               value={this.state.email}
               name="email"
               type="text"
-              placeholder="email address"
+              // placeholder="email address"
               /><br></br>
         Message:<input 
               onChange={this.handleChange}
@@ -69,9 +68,10 @@ class Contact extends React.Component{
               name="message"
               type="text"
               placeholder=""
+              
               />
               <br></br>
-        <button type="submit">Let's talk</button>
+      <button class="waves-effect waves-teal btn-flat"type="submit">REQUEST</button>
         </form>
       </div>
     )

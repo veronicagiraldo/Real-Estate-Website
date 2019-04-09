@@ -1,20 +1,24 @@
 import React from 'react';
 import { withContext } from '../AppContext';
+import './list.css'
 
 const List = (props) => {
   // console.log(props.list)
+  // let {_id} = props.list
+  // const list = props.list.filter(list=> list._id === _id)
   let {_id} = props.list
-  const list = props.list.filter(list=> list._id === _id)
-  let {title, description, price, picture } = list
   return(
     <div class="listContainer">
-      <h3>{title}</h3>
-      <h3>{description}</h3>
-      <h3>{price}</h3>
-      <h3>{picture}</h3>
-      <img src={picture} alt={"picture"+_id}/>
-      {/* <button onClick={() => props.addList()}></button> */}
-      <button class="waves-effect waves-teal btn-flat"onClick={() => props.deleteList(_id)}></button>
+    <div class="listInfo">
+      <h3>FOR SALE</h3>
+      <p>{props.list.title}</p>
+      <p>Description:{props.list.description}</p>
+      <p>$${props.list.price}</p>
+      <img class="responsive-img"src={props.list.picture} alt={'picture'}></img>
+      {/* <img src={picture} alt={"picture"+_id}/> */}
+      <button class="add"onClick={() => props.addList(_id)}></button>
+      <button class="delete"onClick={() => props.deleteList(_id)}></button>
+    </div>
     </div>
   )
 }

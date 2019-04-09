@@ -1,3 +1,20 @@
 .page-footer{
   background-color: #006064;
+  font-family: "Myriad Pro, san-serif";
+}
+.mvlogo{
+  height: 100px;
+  width: 100px;
+}
+li {
+  font-size: 30px;
+}
+p{
+  font-size: 20px;
+}
+.container{
+  text-align:center;
+}
+.realtylogo{
+  
 }

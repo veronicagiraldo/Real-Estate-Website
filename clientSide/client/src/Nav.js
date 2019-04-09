@@ -18,7 +18,6 @@ function Nav (props){
           <div className="nav-link">
             <Link to="/login">Log In</Link>
           </div>
-          
         </React.Fragment>
         :
         <React.Fragment>
@@ -33,7 +32,7 @@ function Nav (props){
             </div>
         </React.Fragment>
       }
-      
+        
         <Link className="navLinks" to='/home' >Home</Link>
         <Link className="navLinks" to='/about' >About</Link>
         <Link className="navLinks" to='/blog' >Blog</Link>

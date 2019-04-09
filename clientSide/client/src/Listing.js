@@ -53,34 +53,37 @@ class Listing extends React.Component{
             value={this.state.title}
             name="title"
             type="text"
-            placeholder="title"
+            // placeholder="title"
+            class="input"
             />
       Description: <input 
           onChange ={this.handleList}
           value={this.state.description}
           name="description"
           type="text"
-          placeholder="description"
+          // placeholder="description"
+          class="input"
           />
       Price: <input 
             onChange ={this.handleList}
             value={this.state.price}
             name="price"
             type="number"
-            placeholder="price"
+            // placeholder="price"
+            class="input"
             />
       Picture: <input 
             onChange ={this.handleList}
             value={this.state.picture}
             name="picture"
             type="text"
-            placeholder="picture"
+            // placeholder="picture"
+            class="input"
             />
-        <button type="submit">Add new Listing</button>
+        <button class="waves-effect waves-teal btn-flat"type="submit">Add new Listing</button>
         </form>
       </div>
     ) 
   }
-
 }
 export default withContext(Listing);

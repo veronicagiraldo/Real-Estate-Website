@@ -12,20 +12,20 @@ class Display extends React.Component{
   
   render(){
     // console.log(this.props.lists)
-    const listingMapped = this.props.lists.map((list,i) =>{
-      console.log(list)
-      return<h3>{list.title}{list.description}{list.price}<img className="displayImg"src={list.picture} alt={'picture'+i}></img></h3>
-    })
+    const listingMapped = this.props.lists.map((list,i) => <List key ={i} list={list}></List>)
+    
+      // console.log(list)
+      // return<h3>{list.title}{list.description}{list.price}<img className="displayImg"src={list.picture} alt={'picture'+i}></img></h3>
+    
     return (
-      <div className="listDisplay">
-      {/* <h3>{this.props.title}</h3> */}
-      <h3>Listing</h3>
-      <div className="listDisplay">
+      // <div className="listDisplay">
+        <div>
       {listingMapped}
-    </div>
+{/*    
     <Switch>
       <Route path="/list/:_id" component={List}/>
-      </Switch>
+      </Switch> */}
+   
       </div>
     )
   }

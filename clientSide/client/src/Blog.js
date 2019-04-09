@@ -17,7 +17,7 @@ class Blog extends React.Component{
       <div className="blogBody">
         <h2 className="blogTitle">BLOG</h2>
         <div className="blogContainer">
-        <h3>Follow @mvrealtors</h3>
+        <h3>@mvrealtors</h3>
         {mapfeed}
         </div>
       </div>

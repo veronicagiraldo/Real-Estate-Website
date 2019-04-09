@@ -7,38 +7,40 @@ body{
 }
 .header{
   margin: 20px;
-  justify-content: center;
+  float: center;
 }
+.Real-Estate{
+  text-align: center;
+  /* background-color: black;   */
+}
+
 .profileDisplay{
   font-size: 20px;
   margin: 20px;
 }
-.button{
-
+.mvlogo{
+  height: 100px;
+  width: 100px;
 }
-
+.profileInfo{
+  width: 400px;
+  height: 400px;
+  padding: 15px;
+  box-shadow: 10px 10px 5px grey;
+}
+.form{
+  text-align: center; 
+}
+input{
+  text-align: center;
+}
 p{
   margin: 10px;
-}
-
-.Real-Estate{
-  /* background-color: #006064;   */
-}
-.navbar-wrapper{
-  /* background-color: #00838F; */
-}
-/* .footer{
-  background-color: #002B2E;
-} */
-.home{
-  /* float: left; */
-  /* width: 50%; */
 }
 .misty, .charles, .couple2{
   height: 200px;
   width: 200px;
 }
-
 .displayImg{
   height: 100px;
   width: 100px;
