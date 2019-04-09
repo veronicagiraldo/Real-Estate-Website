@@ -1,10 +1,21 @@
-.blogContainer{
+.blogBody{
   display: flex;
+  /* flex-wrap: flex-start; */
   flex-direction: column;
+  align-content: center;
   justify-content: center;
+  align-self: center;
+  /* gap: 10px; */
+}
+.blogContainer{
+  /* display: flex; */
+  
+  
   /* grid-gap: 20%; */
-  gap: 20px;
+  /* grid-gap: 20%; */
   margin-bottom: 15px;
+  /* flex-basis: content; */
+
   /* background-color: black; */
 }
 .blogBody{
@@ -12,7 +23,7 @@
 }
 .responsive-img{
   align-self: center;
-  /* display: inline-block; */
+  display: inline-block;
   /* grid-gap: 20%; */
 
 }

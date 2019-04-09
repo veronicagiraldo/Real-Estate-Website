@@ -1,12 +1,14 @@
 .listContainer{
   display: flex;
   flex-direction: column;
-  background-color: black;
+  /* background-color: black; */
+  width: 100%;
   /* justify-content: center; */
 }
 .listInfo{
   /* gap: 20px; */
   padding: 15px;
+  padding-bottom: 40px;
   box-shadow: 10px 10px 10px grey;
 }
 .listDisplay{
@@ -16,7 +18,9 @@
   border-radius: 10%;
 }
 .delete{
-  background-color: aqua;
+  /* background-color: grey; */
+  /* height: 50px;
+  width: 50px; */
 }
 .add{
   background-color: black;

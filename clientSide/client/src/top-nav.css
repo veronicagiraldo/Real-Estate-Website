@@ -1,9 +1,23 @@
  nav{
   background-color: #006064;
 }
+.nav-wrapper{
+display: flex;
+
+}
+
+.hide-on-med-and-down{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
 .nav-link{
-  float: right;
-  justify-items: right;
+  /* float: right;
+  justify-items: right; */
+}
+.logout{
+  /* float: top; */
+  align-self: flex-end;
 }
 /* .adminInfo{
   color: #9e9e9e;

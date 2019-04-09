@@ -16,13 +16,13 @@ class Foot extends React.Component{
       <div class="container">
             <div class="row">
               <div class="col l6 s12">
-                <h4 class="white-text">MV Realtor</h4>
+                <h4 class="white-text">MV Realtors</h4>
                 <p class="grey-text text-lighten-4">
                 Realtypath LLC<br></br>
                 2115 S. Dallin Street
                 Salt Lake City, UT 84109
                 <br></br>
-              Misty  |  801.897.6430 | <a href="misty.vasquez@realtypath.com"/>misty.vasquez@realtypath.com <br></br>
+              Misty |  801.897.6430 | <a href="misty.vasquez@realtypath.com"/>misty.vasquez@realtypath.com <br></br>
               Charles | 801.870.0868  | <a href="charles.vasquez@reatlypath.com"/>charles.vasquez@reatlypath.com <br></br>
                </p>
               </div>

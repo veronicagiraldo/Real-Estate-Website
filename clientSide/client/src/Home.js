@@ -30,13 +30,13 @@ class Home extends React.Component{
           Renter to Homeowner painless, flawless and joyous.<br></br>
             Smile!….You’re Home!</p>
         {/* <p>Misty & Charles Vasquez</p> */}
-        <p>Misty Vasquez | 801.897.6430 | misty.vasquez@realtypath.com </p>
-        <p>Charles Vasquez | 801.870.0868 | charles.vasquez@reatlypath.com </p>
+        {/* <p>Misty Vasquez | 801.897.6430 | misty.vasquez@realtypath.com </p>
+        <p>Charles Vasquez | 801.870.0868 | charles.vasquez@reatlypath.com </p> */}
         {/* <p>801.897.6430</p> */}
         {/* <p>misty.vasquez@realtypath.com</p> */}
         {/* <p>801.870.0868</p>
         <p>charles.vasquez@reatlypath.com</p> */}
-        {/* <img className="couple"src={couple2} alt="couple"/> */}
+        <img className="couple"src={couple2} alt="couple"/>
         </div>
       </div>
      

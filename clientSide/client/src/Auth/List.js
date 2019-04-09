@@ -16,8 +16,8 @@ const List = (props) => {
       <p>$${props.list.price}</p>
       <img class="responsive-img"src={props.list.picture} alt={'picture'}></img>
       {/* <img src={picture} alt={"picture"+_id}/> */}
-      <button class="add"onClick={() => props.addList(_id)}></button>
-      <button class="delete"onClick={() => props.deleteList(_id)}></button>
+      {/* <button class="add"onClick={() => props.addList(_id)}></button> */}
+      <button class="delete"onClick={() => props.deleteList(_id)}>DELETE</button>
     </div>
     </div>
   )
