@@ -6,12 +6,13 @@ const ProfileList = (props) => {
   let {_id} = props.contact
     return(
      
-      <div>
-        <h3>{props.contact.fullName}</h3>
-        <h3>{props.contact.email}</h3>
-        <h3>{props.contact.phone}</h3>
-        <h3>{props.contact.message}</h3>
-        <button onClick={() => props.deleteContact(_id)}>Delete</button>
+      <div class="profileDisplay">
+        <h4>Contact</h4>
+        <p>Full Name: {props.contact.fullName}</p>
+        <p>Email:{props.contact.email}</p>
+        <p>Phone:{props.contact.phone}</p>
+        <p>Messages:{props.contact.message}</p>
+        <button class="waves-effect waves-teal btn-flat"onClick={() => props.deleteContact(_id)}>Delete</button>
       </div>
     )
 

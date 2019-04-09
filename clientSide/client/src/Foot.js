@@ -5,6 +5,7 @@ import React from 'react';
 // import {logo5} from './images/logo5.svg'
 // import {pic} from './images/logo.svg'
 import './foot.css';
+import mvlogo from './images/mvlogosvg.svg'
 // import {rplogo} from './images/headerLogo.png'
 
 class Foot extends React.Component{
@@ -31,6 +32,7 @@ class Foot extends React.Component{
                   <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/mvrealtors/"><i class="fab fa-instagram"></i></a></li>
                   <li><a class="grey-text text-lighten-3" href="https://www.realtypath.com/"><img src="./logo.svg"alt=""/></a></li>
                   {/* <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li> */}
+                  {/* <li><img src={mvlogo} alt="mvlogo"/></li> */}
                 </ul>
               </div>
             </div>

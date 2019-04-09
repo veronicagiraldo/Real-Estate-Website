@@ -1,29 +1,26 @@
-/* .header{
-  font-family: 'Myriad Pro', sans-serif;
-
-  text-align: center;
-} */
 body{
-  /* font-family: 'Montserrat', sans-serif; */
+  margin: 0px;
+  font-family: "Myriad Pro, san-serif";
+}
+.about, p{
   margin: 10px;
 }
-/* nav{
-  background-color: #004d40; */
+.header{
+  margin: 20px;
+  justify-content: center;
+}
+.profileDisplay{
+  font-size: 20px;
+  margin: 20px;
+}
+.button{
 
-/* .footer{
-  background-color:
-} */
-.logo{
-  height: 100px;
-  width: 100px;
 }
-.realty{
-  float: right;
+
+p{
+  margin: 10px;
 }
-.blogContainer{
-  display: grid;
-  gap: 20px;
-}
+
 .Real-Estate{
   /* background-color: #006064;   */
 }
