@@ -10,12 +10,14 @@
   padding: 15px;
   padding-bottom: 40px;
   box-shadow: 10px 10px 10px grey;
+  background-color: white;
 }
 .listDisplay{
   /* gap: 20px; */
 }
 .responsive-img{
   border-radius: 10%;
+
 }
 .delete{
   /* background-color: grey; */

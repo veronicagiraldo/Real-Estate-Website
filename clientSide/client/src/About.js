@@ -6,7 +6,7 @@ class About extends React.Component{
   render(){
     return(
       <div className="about">
-      <h1>About Us</h1>
+      <h1></h1>
       <img className ="misty"src={misty} alt="Misty"/>
       <h3>Misty Vasquez</h3>
       <p>Misty grew up in Salt Lake City and currently resides in the Liberty Wells neighborhood.  Her family has lived in the area since the 1920’s.  She has worked in the Service industry since 2003, holding managerial positions. Wanting to provide a full, healthy life for her family and her passion for serving others, drove her in the direction of Real Estate. She became a licensed Real Estate Agent in 2018.<br></br>

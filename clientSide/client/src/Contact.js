@@ -1,5 +1,6 @@
 import React from 'react';
 import { withContext} from './AppContext';
+import './contact.css';
 
 class Contact extends React.Component{
   constructor(){

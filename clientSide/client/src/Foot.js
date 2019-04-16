@@ -17,8 +17,8 @@ class Foot extends React.Component{
             <div class="row">
               <div class="col l6 s12">
                 <h4 class="white-text">MV Realtors</h4>
-                <p class="grey-text text-lighten-4">
-                Realtypath LLC<br></br>
+                <p class="footInfo">
+                Realtypath LLC.<br></br>
                 2115 S. Dallin Street
                 Salt Lake City, UT 84109
                 <br></br>

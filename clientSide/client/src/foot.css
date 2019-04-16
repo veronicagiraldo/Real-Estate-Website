@@ -1,6 +1,6 @@
 .page-footer{
   background-color: #006064;
-  font-family: "Myriad Pro, san-serif";
+  /* font-family: "Myriad Pro, san-serif"; */
 }
 .mvlogo{
   height: 100px;
@@ -11,10 +11,16 @@ li {
 }
 p{
   font-size: 20px;
+  
 }
 .container{
   text-align:center;
 }
 .realtylogo{
   
+}
+.footInfo {
+  background-color: #006064;
+  letter-spacing: 1px;
+  color: #E0E0E0 ;
 }

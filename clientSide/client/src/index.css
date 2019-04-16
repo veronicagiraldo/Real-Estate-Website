@@ -1,9 +1,17 @@
 body{
   margin: 0px;
-  font-family: "Myriad Pro, san-serif";
+  /* font-family: "Myriad Pro, san-serif"; */
+  /* font-family: 'Muli', sans-serif; */
+  font-family: 'Roboto', sans-serif;
+
 }
 .about, p{
+  /* font-family: 'Muli', sans-serif; */
+  /* color: white; */
+  /* color: #006064; */
+  background-color: white;
   margin: 10px;
+  padding-top: 20px;
 }
 .header{
   margin: 20px;
@@ -11,7 +19,10 @@ body{
 }
 .Real-Estate{
   text-align: center;
-  /* background-color: black;   */
+  background-color: #006064;
+  padding-top: 30px;
+  /* background-color: #008F98; */
+  /* background-color:#4DB6AC; */
 }
 
 .profileDisplay{
@@ -23,14 +34,15 @@ body{
   width: 100px;
 }
 .profileInfo{
-  width: 400px;
-  height: 400px;
+  /* width: 475px;
+  height: 475px; */
   padding: 15px;
+  border-radius: 2%;
+  background-color: white;
   box-shadow: 10px 10px 5px grey;
+  font-size: 28px;
 }
-.form{
-  text-align: center; 
-}
+
 input{
   text-align: center;
 }

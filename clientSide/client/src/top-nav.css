@@ -1,15 +1,20 @@
  nav{
-  background-color: #006064;
+  /* background-color: #006064; */
+  background-color: white;
 }
 .nav-wrapper{
 display: flex;
+color: #006064;
 
 }
-
+nav ul a {
+  color: #006064;
+}
 .hide-on-med-and-down{
   width: 100%;
   display: flex;
   justify-content: space-around;
+  
 }
 .nav-link{
   /* float: right;

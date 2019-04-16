@@ -8,7 +8,7 @@ const ProfileList = (props) => {
      
       <div class="profileDisplay">
       <div class="profileInfo">
-        <h4>Contact</h4>
+        <h3>Contact</h3>
         <p>Full Name: {props.contact.fullName}</p>
         <p>Email:{props.contact.email}</p>
         <p>Phone:{props.contact.phone}</p>
