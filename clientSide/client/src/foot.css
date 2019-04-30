@@ -1,7 +1,11 @@
 .page-footer{
-  background-color: #006064;
-  /* font-family: "Myriad Pro, san-serif"; */
+  /* background-color: #006064; */
+  background-image: linear-gradient( #006064, #043D41);
 }
+Footer{
+  
+}
+
 .mvlogo{
   height: 100px;
   width: 100px;
@@ -11,16 +15,17 @@ li {
 }
 p{
   font-size: 20px;
+  /* background-image: linear-gradient( #006064, #043D41); */
   
 }
 .container{
   text-align:center;
+  /* background-image: linear-gradient( #006064, #043D41); */
 }
-.realtylogo{
-  
-}
+
 .footInfo {
-  background-color: #006064;
+  /* background-image: linear-gradient( #006064, #043D41); */
+  /* background-color: #006064;
   letter-spacing: 1px;
-  color: #E0E0E0 ;
+  color: #E0E0E0 ; */
 }

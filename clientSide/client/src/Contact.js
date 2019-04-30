@@ -1,6 +1,7 @@
 import React from 'react';
 import { withContext} from './AppContext';
 import './contact.css';
+import home from './images/mv-home-2.png';
 
 class Contact extends React.Component{
   constructor(){
@@ -41,7 +42,7 @@ class Contact extends React.Component{
     return(
       <div className="contactContainer">
         <form class="form" onSubmit={this.handleSubmit}>
-        <h2>WE NEED TO TALK </h2>
+        <h2>Let's Talk </h2>
          Full Name:<input
               onChange={this.handleChange}
               value={this.state.fullName}
@@ -74,6 +75,7 @@ class Contact extends React.Component{
               <br></br>
       <button class="waves-effect waves-teal btn-flat"type="submit">REQUEST</button>
         </form>
+        <img class="responsive-img"src={home} alt=""/>
       </div>
     )
   }

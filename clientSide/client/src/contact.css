@@ -1,12 +1,19 @@
-/* .contactContainer{
 
-} */
 .form{
   text-align: center; 
-  background-color: white;
-  background-color: #E0E0E0;
+  /* background-color: white; */
+  /* background-color: #E0E0E0; */
+  /* background-image: url("./images/mv-home-2.png");
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  /* background-position: center bottom; 
+  background-size: cover;  */
   padding-top: 40px;
   padding-right: 40px;
   padding-left: 40px;
   padding-bottom: 40px;
+  
+}
+.responsive-img{
+  border-radius: 2%;
 }

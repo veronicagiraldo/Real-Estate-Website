@@ -12,15 +12,11 @@ import Profile from '../src/Auth/Profile'
 import ProtectedRoute from "./Auth/ProtectedRoute";
 import Foot from './Foot';
 import Display from './Auth/Display';
-import mvlogo from './images/mvlogosvg.svg'
-// import logo from './logo.svg';
+
 
 function App () {
     return (
       <div className="Real-Estate">
-      <img className="mvlogo" src={mvlogo} alt="mvlogo"/>
-       <h1 className="header">MV Realtors</h1>
-        <header className="AppContainer">
           <Nav />
           <Switch>
             <Route path="/signup" component={Signup}/>
@@ -35,7 +31,7 @@ function App () {
             <Route path ='/display' component={Display}/>
           </Switch>
           <Foot/>
-        </header>
+      
       </div>
     );
   }

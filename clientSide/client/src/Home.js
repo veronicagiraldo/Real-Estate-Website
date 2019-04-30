@@ -4,39 +4,56 @@ import React from 'react';
 // import misty from './images/pic2.svg';
 // import couple from './images/pic3.svg';
 import couple2 from './images/pic4.svg';
-import {carousel} from 'react-materialize';
-class Home extends React.Component{
- 
+import {Carousel} from 'react-materialize';
+import living from './images/apartment-architecture-bookcase-271795.jpg'
+import ceiling from './images/ceiling.jpg';
+import apartment from './images/apartment-.jpg';
+import utah from './images/utah.jpg';
+import lroom from './images/lroom.jpg';
+import keycouple from './images/couple-investment-key-1288482.jpg';
+import adults from './images/adult-casual-chef-1418355.jpg';
+import feet from './images/adult-baby.jpg';
+// import smile from './images/MV logos-2.png';
+import mvlogo from './images/mvlogosvg.svg'
+import './home.css'
+import rp from "./images/headerLogo.png"
 
+class Home extends React.Component{
+ constructor(){
+   super()
+   this.style={
+     fontStyle: "italic"
+   }
+ }
+  componentDidUpdate(){
+      setTimeout(() => {
+        window.location.reload();
+    }, 1000);
+  }
+  
   render(){
     return(
       <div className="homeContainer">
-      <div className="home">
-      {/* <div class="carousel">
-      <img class="carousel-item" href="#one!"src="https://lorempixel.com/250/250/nature/1"/>
-      <img class="carousel-item" href="#two!"src="https://lorempixel.com/250/250/nature/2"/>
-      <img class="carousel-item" href="#three!"src="https://lorempixel.com/250/250/nature/3"/>
-      <img class="carousel-item" href="#four!"src="https://lorempixel.com/250/250/nature/4"/>
-      <img class="carousel-item" href="#five!"src="https://lorempixel.com/250/250/nature/5"/>
-</div> */}
-    {/* <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/250/250/nature/2"></a>
-    <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/250/250/nature/3"></a>
-    <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4"></a>
-    <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"></a>
-  </div>
-       */}
+        <div className="home">
+        <img className="mvlogo left" src={mvlogo} alt="mvlogo"/>
+        <img class="responsive-img realtylogo right"src={rp}alt="realtypath"/>
+        <h1 className="header">MV Realtors</h1>
+    
+  <Carousel options={{fullWidth: true ,indicators: true,  setTimeout: 1000}} images={[
+    `${ceiling}`,
+    `${lroom}`, 
+    `${keycouple}`,
+    `${adults}`,
+    `${feet}`,
+    // `${smile}`,
+  ]} />
+   
         <p>Our Mission:</p>
-        <p>To get you into the home of your dreams all while making your transition from 
-          Renter to Homeowner painless, flawless and joyous.<br></br>
-            Smile!….You’re Home!</p>
-        {/* <p>Misty & Charles Vasquez</p> */}
-        {/* <p>Misty Vasquez | 801.897.6430 | misty.vasquez@realtypath.com </p>
-        <p>Charles Vasquez | 801.870.0868 | charles.vasquez@reatlypath.com </p> */}
-        {/* <p>801.897.6430</p> */}
-        {/* <p>misty.vasquez@realtypath.com</p> */}
-        {/* <p>801.870.0868</p>
-        <p>charles.vasquez@reatlypath.com</p> */}
-        <img className="couple"src={couple2} alt="couple"/>
+        <p style={this.style}>To get you into the home of your dreams all while making your transition from 
+          Renter to Homeowner painless, flawless, and joyous.</p>
+           <p class="smile"> Smile!<br></br>…You’re Home!</p>
+  
+        <img className="responsive-img couple"src={couple2} alt="couple"/>
         </div>
       </div>
      

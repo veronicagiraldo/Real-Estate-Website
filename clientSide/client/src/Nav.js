@@ -41,8 +41,8 @@ function Nav (props){
         <Link className="navLinks" to='/contact'>Lets Talk</Link>
         <Link className="navLinks" to='/display'>Listings</Link> 
         <ul>
-          <li><a class="#006064" href="https://www.facebook.com/RealtorsMV/"><i class="fab fa-facebook-f"></i></a></li>
-          <li><a class="#006064" href="https://www.instagram.com/mvrealtors/"><i class="fab fa-instagram"></i></a></li>
+          <li><a class="#006064" href="https://www.facebook.com/RealtorsMV/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a class="#006064" href="https://www.instagram.com/mvrealtors/" target="_blank"><i class="fab fa-instagram"></i></a></li>
         </ul>
         
         {
