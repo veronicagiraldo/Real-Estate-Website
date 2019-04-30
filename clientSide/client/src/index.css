@@ -1,23 +1,11 @@
 body{
   margin: 0px;
+  /* width: 100%; */
   /* font-family: "Myriad Pro, san-serif"; */
   /* font-family: 'Muli', sans-serif; */
   font-family: 'Roboto', sans-serif;
 
 }
-.about, p{
-  /* font-family: 'Muli', sans-serif; */
-  /* color: white; */
-  /* color: #006064; */
-  /* background-color: white;
-  margin: 10px;
-  padding-top: 20px; */
-}
-/* .header{
-  margin: 20px;
-  float: center;
-  
-} */
 
 .Real-Estate{
   text-align: center;

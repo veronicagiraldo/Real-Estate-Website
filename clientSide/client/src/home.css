@@ -1,4 +1,4 @@
-h1 {
+h1, h3 {
   font-size: 72px;
   background: -webkit-linear-gradient( #006064, rgb(3, 43, 46));
   -webkit-background-clip: text;
@@ -11,4 +11,25 @@ h1 {
 .smile{
   font-size: 3em;
   font-style: italic;
+  /* color: #006064; */
+  background: -webkit-linear-gradient( #006064, rgb(3, 43, 46));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+img.responsive-img{
+  width: 140px;
+  height: 180px;
+  display: inline-block;
+}
+.feed .responsive-img {
+  width: 140px;
+  height: 180px;
+  display: inline-block;
+}
+.homeContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
 }

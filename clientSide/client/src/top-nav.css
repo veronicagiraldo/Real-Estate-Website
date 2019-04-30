@@ -8,7 +8,9 @@ color: #006064;
 
 }
 nav ul a {
-  color: #006064;
+  background: -webkit-linear-gradient( #006064, rgb(3, 43, 46));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .hide-on-med-and-down{
   width: 100%;

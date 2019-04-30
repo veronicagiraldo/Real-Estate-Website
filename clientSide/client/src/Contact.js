@@ -75,7 +75,7 @@ class Contact extends React.Component{
               <br></br>
       <button class="waves-effect waves-teal btn-flat"type="submit">REQUEST</button>
         </form>
-        <img class="responsive-img"src={home} alt=""/>
+        <img className="mvhome"src={home} alt=""/>
       </div>
     )
   }

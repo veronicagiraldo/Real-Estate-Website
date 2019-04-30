@@ -15,7 +15,7 @@ class Blog extends React.Component{
     
     return(
       <div className="blogBody">
-        <h2 className="blogTitle"></h2>
+        <h1 className="blogTitle">Blog</h1>
         <div className="blogContainer">
         <h3>@mvrealtors</h3>
         {mapfeed}

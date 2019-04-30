@@ -2,8 +2,8 @@ import React from 'react';
 import {Link} from 'react-router-dom'
 import { withContext } from './AppContext';
 import {Navbar} from 'react-materialize';
-import logo from './images/logo.svg';
 import './top-nav.css'
+// import mvlogo from './images/mvlogosvg.svg'
 
 
 function Nav (props){
@@ -11,7 +11,8 @@ function Nav (props){
       
       <Navbar>
        <div class="nav-wrapper">
-       <a href="#" class="brand-logo"><i class ="material-icons">menu</i></a>
+      
+       <button class="brand-logo"><i class ="material-icons">menu</i></button>
        {/* <ul id="nav-mobile" class="right sidenav-trigger">
        </ul> */}
        </div>
@@ -41,8 +42,8 @@ function Nav (props){
         <Link className="navLinks" to='/contact'>Lets Talk</Link>
         <Link className="navLinks" to='/display'>Listings</Link> 
         <ul>
-          <li><a class="#006064" href="https://www.facebook.com/RealtorsMV/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-          <li><a class="#006064" href="https://www.instagram.com/mvrealtors/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <li><a class="#006064" href="https://www.facebook.com/RealtorsMV/" target="_blank" without rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a class="#006064" href="https://www.instagram.com/mvrealtors/" target="_blank" without rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
         </ul>
         
         {
