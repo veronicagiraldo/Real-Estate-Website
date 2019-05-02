@@ -16,7 +16,7 @@ function Nav (props){
        {/* <ul id="nav-mobile" class="right sidenav-trigger">
        </ul> */}
        </div>
-      {
+      {/* {
         !props.token? 
         <React.Fragment>
           <Link to="/signup">Sign Up</Link>
@@ -25,7 +25,7 @@ function Nav (props){
         <React.Fragment>
             <Link to="/listing">Update Listings</Link>
         </React.Fragment>
-      }
+      } */}
       { !props.token? 
         <React.Fragment>
           <Link to="/login">Log In</Link>
@@ -40,7 +40,7 @@ function Nav (props){
         <Link className="navLinks" to='/about' >About</Link>
         <Link className="navLinks" to='/blog' >Blog</Link>
         <Link className="navLinks" to='/contact'>Lets Talk</Link>
-        <Link className="navLinks" to='/display'>Listings</Link> 
+        {/* <Link className="navLinks" to='/display'>Listings</Link>  */}
         <ul>
           <li><a class="#006064" href="https://www.facebook.com/RealtorsMV/" target="_blank" without rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></li>
           <li><a class="#006064" href="https://www.instagram.com/mvrealtors/" target="_blank" without rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>

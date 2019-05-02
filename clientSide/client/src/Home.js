@@ -6,7 +6,7 @@ import couple2 from './images/pic4.svg';
 // import apartment from './images/apartment-.jpg';
 // import utah from './images/utah.jpg';
 // import lroom from './images/lroom.jpg';
-// import keycouple from './images/couple-investment-key-1288482.jpg';
+import keycouple from './images/couple-investment-key-1288482.jpg';
 // import adults from './images/adult-casual-chef-1418355.jpg';
 // import feet from './images/adult-baby.jpg';
 // import smile from './images/MV logos-2.png';
@@ -35,7 +35,7 @@ class Home extends React.Component{
       <div className="homeContainer">
         <div className="home">
         <img className="hide-on-small-only mvlogo left" src={mvlogo} alt="mvlogo"/>
-        <img class="hide-on-small-only responsive-img realtylogo right"src={rp}alt="realtypath"/>
+        <img class="hide-on-small-only realtylogo right"src={rp}alt="realtypath"/>
         <h1 className="header">MV Realtors</h1>
    
   {/* <Carousel options={{fullWidth: true ,indicators: true,  setTimeout: 1000}} images={[
