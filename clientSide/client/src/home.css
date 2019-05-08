@@ -1,8 +1,8 @@
 h1, h3 {
   font-size: 72px;
-  background: -webkit-linear-gradient( #006064, rgb(3, 43, 46));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* background: -webkit-linear-gradient( #006064, rgb(3, 43, 46)); */
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
 }
 /* .realtylogo {
   -webkit-align-self: right; 
@@ -12,9 +12,9 @@ h1, h3 {
   font-size: 3em;
   font-style: italic;
   /* color: #006064; */
-  background: -webkit-linear-gradient( #006064, rgb(3, 43, 46));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* background: -webkit-linear-gradient( #006064, rgb(3, 43, 46)); */
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
 
 }
 img.responsive-img{
@@ -31,9 +31,9 @@ img.responsive-img{
   display: flex;
   flex-direction: column;
   gap: 10px;
-  background-image: url('./images/couple-investment-key-1288482.jpg');
-  background-size: cover;
-  background-repeat: no-repeat, repeat;
+  /* background-image: url('./images/couple-investment-key-1288482.jpg'); */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat, repeat; */
   opacity: 1;
 
 }

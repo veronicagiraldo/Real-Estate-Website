@@ -5,6 +5,7 @@
 .nav-wrapper{
 display: flex;
 color: #006064;
+text-align: center;
 
 }
 nav ul a {

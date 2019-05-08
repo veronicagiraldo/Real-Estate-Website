@@ -30,37 +30,37 @@ class UserProvider extends React.Component{
       })
   }
 // listing information -get/post/put/delete
-  getList = () => {
-    console.log("show my listings")
-    return listAxios.get('/api/list')
-      .then(response => {
-        // console.log(response)
-        this.setState({ lists: response.data});
-        return response;
-      })
-  }
-  addList = (newList) => {
-    console.log('fired')
-    return listAxios.post('/api/list', newList)
-      .then(response => {
-        this.setState(prevState => {
-          return { lists: [...prevState.lists, response.data]}
-        });
-        return response;
-      })
-  }
-  deleteList = (listId) => {
-    return listAxios.put(`/api/list/${listId}`)
-      .then( response => {
-        this.setState(prevState => {
-          const updatedList = prevState.lists.filter(list => {
-            return list._id !== listId
-          })
-          return { lists: updatedList}
-        })
-        return response;
-      })
-   }
+  // getList = () => {
+  //   console.log("show my listings")
+  //   return listAxios.get('/api/list')
+  //     .then(response => {
+  //       // console.log(response)
+  //       this.setState({ lists: response.data});
+  //       return response;
+  //     })
+  // }
+  // addList = (newList) => {
+  //   console.log('fired')
+  //   return listAxios.post('/api/list', newList)
+  //     .then(response => {
+  //       this.setState(prevState => {
+  //         return { lists: [...prevState.lists, response.data]}
+  //       });
+  //       return response;
+  //     })
+  // }
+  // deleteList = (listId) => {
+  //   return listAxios.put(`/api/list/${listId}`)
+  //     .then( response => {
+  //       this.setState(prevState => {
+  //         const updatedList = prevState.lists.filter(list => {
+  //           return list._id !== listId
+  //         })
+  //         return { lists: updatedList}
+  //       })
+  //       return response;
+  //     })
+  //  }
   //  contact us information -get/post/delete
    getContact = () => {
     // console.log("hello")
