@@ -16,33 +16,32 @@ class Foot extends React.Component{
       <div class="container">
             <div class="row">
               <div class="col l6 s12">
-                <h4 class="white-text">MV Realtors</h4>
+                <p class="white-text">MV Realtors</p>
                 <p class="footInfo">
                 Realtypath LLC.
                 2115 S. Dallin Street
                 Salt Lake City, UT 84109
-                </p>
-                <p> Misty |  801.897.6430 | <a href="misty.vasquez@realtypath.com"/>misty.vasquez@realtypath.com </p>
-             <p> Charles | 801.870.0868  | <a href="charles.vasquez@reatlypath.com"/>charles.vasquez@realtypath.com</p> <br></br>
+               <br></br>
+               Misty |  801.897.6430 | <a href="mailto: misty.vasquez@realtypath.com" >misty.vasquez@realtypath.com </a>
+            <br></br>  Charles | 801.870.0868  | <a href="mailto: charles.vasquez@realtypath.com">charles.vasquez@realtypath.com </a>
+              </p>
               </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text"></h5>
+              {/* <div class="col l4 offset-l2 s12"> */}
+                
                 <ul>
-                  <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/RealtorsMV/"><i class="fab fa-facebook-f"></i></a></li>
-                  <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/mvrealtors/"><i class="fab fa-instagram"></i></a></li>
-                  <li><a class="grey-text text-lighten-3" href="https://www.realtypath.com/"><i class="rp"></i></a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/RealtorsMV/" target="_blank" without rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/mvrealtors/"target="_blank" without rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://www.realtypath.com/"target="_blank" without rel="noopener noreferrer"><i class="rp"></i></a></li>
                   {/* <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li> */}
-                  <li><img class="mvlogo"src={mvlogo} alt="mvlogo"/></li>
+                  {/* <li><img class="mvlogo"src={mvlogo} alt="mvlogo"/></li> */}
                   <li><img class="realtylogo"src={rp}alt="realtypath"/></li>
                 </ul>
               </div>
             </div>
-          </div>
+          {/* </div> */}
           <div class="footer-copyright">
             <div class="container">
             MV Realtors © 2019 Copyright
-            
-            {/* <a class="grey-text text-lighten-4 right" href="#!">MV Realtors©</a> */}
             </div>
           </div>
       </footer>

@@ -4,7 +4,7 @@ import Nav from './Nav';
 import Home from './Home';
 import About from './About';
 import Blog from './Blog';
-import Contact from './Contact';
+import Form from './Contact';
 import List from './Listing';
 import Signup from './Auth/Signup';
 import Login from './Auth/Login';
@@ -12,13 +12,32 @@ import Profile from '../src/Auth/Profile'
 import ProtectedRoute from "./Auth/ProtectedRoute";
 import Foot from './Foot';
 import Display from './Auth/Display';
+// import NavbarTwo from './NavbarTwo';
 
 
 function App () {
     return (
       <div className="Real-Estate">
+        {/* <NavbarTwo /> */}
           <Nav />
-          <Switch>
+          <Home 
+            title="Home"
+            subtitle={Home}
+            dark ={false}
+            id="home"/>
+          <About 
+            title="About"
+            subtitle={About}
+            dark ={false}
+            id="about"
+            />
+          <Form
+            title="contact"
+            subtitle={Form}
+            dark={false}
+            id="contact"
+            />
+                      {/* <Switch>
             <Route path="/signup" component={Signup}/>
             <Route path="/login" component={Login}/>
               <Route exact path="/" render={() => <Redirect to="/home"/>}/>
@@ -29,7 +48,7 @@ function App () {
             <Route path ='/Contact' component={Contact}/>
             <Route path ='/Listing' component={List}/>
             <Route path ='/display' component={Display}/>
-          </Switch>
+          </Switch> */}
           <Foot/>
       
       </div>

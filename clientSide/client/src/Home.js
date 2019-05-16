@@ -57,10 +57,10 @@ class Home extends React.Component{
            {/* <p style=""="smile"> Smile!<br></br>…You’re Home!</p> */}
         <img className="responsive-img couple"src={couple2} alt="couple"/>
         
-        <h3>Follow @mvrealtors on Instagram</h3>
+        {/* <h3>Follow @mvrealtors on Instagram</h3> */}
               {mapfeed}
                 
-              <h3>@mvrealtors</h3>
+              {/* <h3>@mvrealtors</h3> */}
               </div>
       </div>
      

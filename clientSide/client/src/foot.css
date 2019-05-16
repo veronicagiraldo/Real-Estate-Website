@@ -1,17 +1,18 @@
 .page-footer{
-  /* background-color: #006064; */
+  height: 300px;
   background-image: linear-gradient( #006064, #043D41);
-}
-Footer{
-  
 }
 
 .mvlogo{
-  height: 100px;
-  width: 100px;
+  height: 50px;
+
+}
+ul li {
+  display: inline-block;
+  justify-content: space-evenly;
 }
 li {
-  font-size: 30px;
+  font-size: 20px;
 }
 p{
   font-size: 20px;

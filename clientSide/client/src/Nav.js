@@ -1,17 +1,102 @@
-import React from 'react';
-import {Link} from 'react-router-dom'
+import React, {Component} from 'react';
+import logo from "./logo.svg";
+// import {Link} from 'react-router-dom'
 import { withContext } from './AppContext';
-import {Navbar} from 'react-materialize';
-// import './top-nav.css'
+import { Link, animateScroll as scroll } from "react-scroll";
+
+// import {Navbar} from 'react-materialize';
 // import mvlogo from './images/mvlogosvg.svg'
-import './navbar.css';
+import './navbartwo.css';
 
+export default class Nav extends Component {
+  scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+  render() {
+    
+    return (
+      
+      <nav className="nav" id="navbar">
+        <div className="nav-content">
+          <img
+            src={logo}
+            className="nav-logo"
+            alt="Logo"
+            onClick={this.scrollToTop}
+          />
+          <ul className="nav-items">
+            <li className="nav-item">
+              <Link
+                activeClass="active"
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+               About
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                activeClass="active"
+                to="form"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                Contact
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                activeClass="active"
+                to="section3"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                Section 3
+              </Link>
+            </li>
+            {/* <li className="nav-item">
+              <Link
+                activeClass="active"
+                to="section4"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                Section 4
+              </Link>
+            </li> */}
+            {/* <li className="nav-item">
+              <Link
+                activeClass="active"
+                to="section5"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                Section 5
+              </Link>
+            </li> */}
+          </ul>
+        </div>
+      </nav>
+    );
+  }
+}
 
-function Nav (){
+// function Nav (){
   // render(){
 
   // }
-    return(
+    // return(
       // <Navbar>
       //  <div class="nav-wrapper">
       //  <a href="#" class="brand-logo right">MV Realtors</a>
@@ -25,15 +110,15 @@ function Nav (){
       //  </div>
       //   </Navbar>
 
-      <div id="navbar">
-        {/* <a class="active" href="javascript:void(0)">Home</a> */}
-        <Link className="navLinks" to='/home' >Home</Link>
-        <Link className="navLinks" to='/about' >About</Link>
-        <Link className="navLinks" to='/contact'>Let's Talk</Link>
-      </div>
-    )
-}
-    export default withContext (Nav);
+//       <div id="navbar">
+//         {/* <a class="active" href="javascript:void(0)">Home</a> */}
+//         <Link className="navLinks" to='/home' >Home</Link>
+//         <Link className="navLinks" to='/about' >About</Link>
+//         <Link className="navLinks" to='/contact'>Let's Talk</Link>
+//       </div>
+//     )
+// }
+    // export default withContext (Nav);
    
 //   //       !props.token? 
 //   //       <React.Fragment>
