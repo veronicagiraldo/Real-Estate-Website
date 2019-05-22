@@ -1,5 +1,5 @@
 h1, h3 {
-  font-size: 72px;
+  font-size: 30px;
   /* background: -webkit-linear-gradient( #006064, rgb(3, 43, 46)); */
   /* -webkit-background-clip: text; */
   /* -webkit-text-fill-color: transparent; */
@@ -9,7 +9,7 @@ h1, h3 {
   align-self: right;
 } */
 .smile{
-  font-size: 3em;
+  font-size: 20px;
   font-style: italic;
   /* color: #006064; */
   /* background: -webkit-linear-gradient( #006064, rgb(3, 43, 46)); */

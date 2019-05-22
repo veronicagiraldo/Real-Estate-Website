@@ -22,8 +22,8 @@ class Foot extends React.Component{
                 2115 S. Dallin Street
                 Salt Lake City, UT 84109
                <br></br>
-               Misty |  801.897.6430 | <a href="mailto: misty.vasquez@realtypath.com" >misty.vasquez@realtypath.com </a>
-            <br></br>  Charles | 801.870.0868  | <a href="mailto: charles.vasquez@realtypath.com">charles.vasquez@realtypath.com </a>
+               Misty |  801.897.6430 | <a href="mailto: misty.vasquez@realtypath.com" target="_blank" without rel="noopener noreferrer">misty.vasquez@realtypath.com </a>
+            <br></br>  Charles | 801.870.0868  | <a href="mailto: charles.vasquez@realtypath.com"target="_blank" without rel="noopener noreferrer">charles.vasquez@realtypath.com </a>
               </p>
               </div>
               {/* <div class="col l4 offset-l2 s12"> */}

@@ -1,0 +1,19 @@
+h1{
+  text-align: center;
+  justify-content: center;
+}
+.about{
+  margin: 30px;
+}
+.aboutInfo{
+  display: grid;
+  /* grid-column-start: 1; */
+  grid-template-columns: 1fr 2fr
+
+}
+/* .about :nth-child(2){
+  grid-column-start: 1;
+}
+.about:nth-child(3){
+  grid-column-start: 2;
+}  */
