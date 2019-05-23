@@ -22,18 +22,18 @@ class Home extends React.Component{
      fontStyle: "italic"
    }
  }
- componentDidMount(){
-      this.props.getInsta();
- }
+//  componentDidMount(){
+//       this.props.getInsta();
+//  }
   // componentDidUpdate(){
   //   this.props.getInsta();
   // }
 
   render(){
-    const mapfeed = this.props.feed.map((feed, i) => {
-      // console.log(feed.images.standard_resolution.url)
-      return<img class="responsive-img feed" src={feed.images.standard_resolution.url} alt={'pic' + i}></img>
-    } )
+    // const mapfeed = this.props.feed.map((feed, i) => {
+    //   // console.log(feed.images.standard_resolution.url)
+    //   return<img class="responsive-img feed" src={feed.images.standard_resolution.url} alt={'pic' + i}></img>
+    // } )
     return(
       <div className="homeContainer">
         <div className="home">
@@ -58,7 +58,7 @@ class Home extends React.Component{
         <img className="responsive-img couple"src={couple2} alt="couple"/>
         
         {/* <h3>Follow @mvrealtors on Instagram</h3> */}
-              {mapfeed}
+              {/* {mapfeed} */}
                 
               {/* <h3>@mvrealtors</h3> */}
               </div>

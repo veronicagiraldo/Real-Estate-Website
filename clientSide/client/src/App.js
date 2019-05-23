@@ -10,6 +10,7 @@ import Signup from './Auth/Signup';
 import Login from './Auth/Login';
 import Profile from '../src/Auth/Profile'
 import ProtectedRoute from "./Auth/ProtectedRoute";
+import InstaFeed from './InstaFeed';
 import Foot from './Foot';
 import Display from './Auth/Display';
 // import NavbarTwo from './NavbarTwo';
@@ -36,6 +37,12 @@ function App () {
             subtitle={Form}
             dark={false}
             id="contact"
+            />
+          <InstaFeed 
+            title="insta"
+            subtitle={InstaFeed}
+            dark={false}
+            id="instafeed"
             />
                       {/* <Switch>
             <Route path="/signup" component={Signup}/>

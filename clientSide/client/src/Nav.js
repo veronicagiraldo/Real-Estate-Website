@@ -58,7 +58,9 @@ export default class Nav extends Component {
                 offset={-70}
                 duration={500}
               >
-                Section 3
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook-f"></i>
+                <i class="far fa-envelope"></i>
               </Link>
             </li>
             {/* <li className="nav-item">
