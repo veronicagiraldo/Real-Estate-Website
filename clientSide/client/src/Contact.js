@@ -43,7 +43,7 @@ class Contact extends React.Component{
       <div className="contactContainer">
         <form class="form" onSubmit={this.handleSubmit}>
         <div class="innerContainer">
-        <h2>Let's Talk </h2>
+        <h4>Let's Talk </h4>
          Full Name:<input
               onChange={this.handleChange}
               value={this.state.fullName}
@@ -77,7 +77,7 @@ class Contact extends React.Component{
       <button class="waves-effect waves-teal btn-flat"type="submit">REQUEST</button>
         </div>
         </form>
-        <img className="mvhome"src={home} alt=""/>
+        {/* <img className="mvhome"src={home} alt=""/> */}
       </div>
     
     )

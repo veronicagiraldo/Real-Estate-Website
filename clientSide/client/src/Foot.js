@@ -13,41 +13,89 @@ class Foot extends React.Component{
   render(){
     return(
       <footer class="page-footer">
-      <div class="container">
-            <div class="row">
+     
+        <div class="row">
+          {/* <div class="col s12">MV Realtors</div> */}
+          <div class="col m3 s12">
+          <img class="realtylogo"src={rp}alt="realtypath"/>
+          </div>
+          <div class="col m3 s12">Realtypath LLC.
+          <i class="fas fa-map-marker-alt">  2115 S. Dallin Street
+                Salt Lake City, UT 84109</i>
+        
+          </div>
+          {/* <div class="col m3 s12 left-align">
+          <div class="col container">
+          <i class="fas fa-user"> Misty Vasquez</i>
+          <i class="fas fa-phone"> 801.897.6430</i> 
+          <i class="fas fa-at"><a href="mailto: misty.vasquez@realtypath.com" target="_blank" without rel="noopener noreferrer"> misty.vasquez@realtypath.com </a></i>
+          <i class="fas fa-user"> Charles Vasquez</i>
+          <i class="fas fa-phone"> 801.870.0868</i> 
+          <i class="fas fa-at"><a href="mailto: charles.vasquez@realtypath.com" target="_blank" without rel="noopener noreferrer"> charles.vasquez@realtypath.com </a></i>
+         
+         </div> */}
+      
+          <ul>
+          <li><i class="fas fa-user">Misty Vasquez</i></li>
+          <li><i class="fas fa-phone"></i> 801.897.6430</li>
+          <li><i class="fas fa-at"><a href="mailto: misty.vasquez@realtypath.com" target="_blank" without rel="noopener noreferrer">misty.vasquez@realtypath.com </a></i></li>
+          <li><i class="fas fa-user">Charles Vasquez</i></li>
+          <li><i class="fas fa-phone"></i> 801.870.0868</li>
+          <li><i class="fas fa-at"><a href="mailto: charles.vasquez@realtypath.com" target="_blank" without rel="noopener noreferrer">charles.vasquez@realtypath.com </a></i></li>
+          </ul>
+         
+          
+          
+      </div>
+      
+        <div class="footer-copyright">
+            <div class="container">
+            MV Realtors © 2019 Copyright
+            </div>
+          </div>
+      
+  
+  </footer>
+    )
+    }
+    }
+    export default Foot;
+
+            {/* <div class="row">
               <div class="col l6 s12">
-                <p class="white-text">MV Realtors</p>
-                <p class="footInfo">
+                <p class="white-text">MV Realtors</p> */}
+                
+                {/* <p class="footInfo">
+               
                 Realtypath LLC.
                 2115 S. Dallin Street
                 Salt Lake City, UT 84109
                <br></br>
                Misty |  801.897.6430 | <a href="mailto: misty.vasquez@realtypath.com" target="_blank" without rel="noopener noreferrer">misty.vasquez@realtypath.com </a>
             <br></br>  Charles | 801.870.0868  | <a href="mailto: charles.vasquez@realtypath.com"target="_blank" without rel="noopener noreferrer">charles.vasquez@realtypath.com </a>
-              </p>
-              </div>
-              {/* <div class="col l4 offset-l2 s12"> */}
+              </p> */}
+              {/* </div>
                 
                 <ul>
                   <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/RealtorsMV/" target="_blank" without rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></li>
                   <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/mvrealtors/"target="_blank" without rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
                   <li><a class="grey-text text-lighten-3" href="https://www.realtypath.com/"target="_blank" without rel="noopener noreferrer"><i class="rp"></i></a></li>
-                  {/* <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li> */}
-                  {/* <li><img class="mvlogo"src={mvlogo} alt="mvlogo"/></li> */}
-                  <li><img class="realtylogo"src={rp}alt="realtypath"/></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                  <li><img class="mvlogo"src={mvlogo} alt="mvlogo"/></li>
+           
                 </ul>
               </div>
-            </div>
-          {/* </div> */}
-          <div class="footer-copyright">
+            </div> */}
+         
+          {/* <div class="footer-copyright">
             <div class="container">
             MV Realtors © 2019 Copyright
             </div>
           </div>
-      </footer>
-    )
+      </footer> */}
+    {/* )
   }
   
-}
+} */}
 
-export default Foot;
+// export default Foot;
