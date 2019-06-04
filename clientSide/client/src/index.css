@@ -41,9 +41,9 @@ body, html{
 input{
   text-align: center;
 }
-p{
+/* p{
   margin: 10px;
-}
+} */
 .misty, .charles, .couple2{
   height: 200px;
   width: 200px;

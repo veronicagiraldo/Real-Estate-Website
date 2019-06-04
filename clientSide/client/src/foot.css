@@ -1,22 +1,23 @@
 .page-footer{
-  height: 200px;
+  
   background-image: linear-gradient( #006064, #043D41);
-   padding-top: 0px;
+   padding-top: 10px;
+   font-size: 14px;
 }
 
 .mvlogo{
   height: 50px;
 }
 ul li {
-  display: inline-block;
+  /* display: inline-block; */
   /* justify-content: space-evenly; */
 }
 li {
-  font-size: 18px;
+  font-size: 14px;
 }
 p{
-  font-size: 18px;
-  margin: 0px;
+  /* font-size: 18px; */
+  /* margin: 0px; */
 }
 .container{
   text-align:center;
@@ -24,4 +25,10 @@ p{
 }
 .forsale{
   width: 150px;
+}
+/* .page-footer .footer-copyright{
+  background-color: #043D41;
+} */
+.row{
+  margin-bottom: 5px;
 }
