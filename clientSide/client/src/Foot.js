@@ -23,7 +23,7 @@ class Foot extends React.Component{
                 Salt Lake City, UT 84109
                 </div>
     <div class="col s12 l3">
-    <ul>
+    <ul class="contactInfo">
           <li><i class="fas fa-user"></i> Misty Vasquez</li>
           <li><i class="fas fa-phone"></i> 801.897.6430</li>
           <li><i class="fas fa-at"></i> <a href="mailto: misty.vasquez@realtypath.com" target="_blank" without rel="noopener noreferrer">misty.vasquez@realtypath.com</a></li>
@@ -33,7 +33,7 @@ class Foot extends React.Component{
           </ul>
          
     </div>
-    <div class="col s12 l3 hide-on-small-only">
+    <div class="col s12 l3">
     <img className="forsale" src={forsale} alt="forsale"/>
     </div>
     </div>
