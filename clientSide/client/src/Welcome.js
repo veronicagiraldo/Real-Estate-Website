@@ -3,8 +3,12 @@ import { withContext } from './AppContext';
 import './welcome.css'
 import misty from './images/pic2.svg';
 import charles from './images/pic1.svg';
+import {Link} from 'react-router-dom';
+// import Contact from './Contact';
+// import About from './About';
 
-const Welcome = () => {
+
+const Welcome = (props) => {
  return(
 <div className="row">
   <div className="column"> 
@@ -20,7 +24,7 @@ const Welcome = () => {
   <img className ="misty"src={misty} alt="Misty"/>
   <h5>Misty Vasquez</h5> 
   <p>Misty's passion for serving others, drove her in the direction of Real Estate...</p>
-  <a class="waves-effect waves-light btn-large">Read More</a>
+  <Link href="./about"class="waves-effect waves-light btn-large">Read More</Link>
   </div>
   </div>
   <div className="column"> 
@@ -28,9 +32,20 @@ const Welcome = () => {
   <img className="charles"src={charles} alt="Charles"/>
   <h5>Charles Vasquez</h5>
   <p>Charles's attention to fine detail makes him a focused and thorough Real Estate Agent...</p>
-  <a class="waves-effect waves-light btn-large">Read More</a>
+  <Link class="waves-effect waves-light btn-large" to="/about"><button>read more</button></Link>
+  {/* <a >Read More</a> */}
   </div>
   </div>
+  {/* <div className="column"> 
+  <div className="card">
+  <h5>Contact Us</h5>
+  <p></p>
+  {/* <button onClick={()=> <Link to='/contact'/>}>hello</button> */}
+  {/* <a href="/contact">Contact</a> */}
+  {/* <Link className="waves-effect waves-light btn-large" to='/Contact'>Click Here</Link>
+  </div>
+  </div> */}
+
 </div>
  )
   

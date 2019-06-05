@@ -1,7 +1,7 @@
 import React from 'react';
 import { withContext } from '../AppContext';
 import List from './List';
-import {Switch, Route} from 'react-router-dom';
+// import {Switch, Route} from 'react-router-dom';
 
 // const Display = () => {
 class Display extends React.Component{

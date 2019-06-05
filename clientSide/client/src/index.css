@@ -9,7 +9,6 @@ body, html{
   /* font-family: "Myriad Pro, san-serif"; */
   /* font-family: 'Muli', sans-serif; */
   font-family: 'Roboto', sans-serif;
-
 }
 
 .Real-Estate{
@@ -41,9 +40,6 @@ body, html{
 input{
   text-align: center;
 }
-/* p{
-  margin: 10px;
-} */
 .misty, .charles, .couple2{
   height: 200px;
   width: 200px;

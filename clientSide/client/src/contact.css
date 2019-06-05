@@ -1,23 +1,11 @@
-
-.form{
-  float: left; 
-  text-align: center; 
-  /* background-color: white; */
-  /* background-color: #E0E0E0; */
-  /* background-image: url("./images/mv-home-2.png");
-  background-repeat: no-repeat;
-  /* background-attachment: fixed; */
-  /* background-position: center bottom; 
-  background-size: cover;  */
-  /* padding-top: 40px;
-  padding-right: 40px;
-  padding-left: 40px;
-  padding-bottom: 40px; */
-  
+.contactContainer{
+  /* float: left; */
+  width: 33%;
 }
-/* .responsive-img{
-  border-radius: 2%;
-} */
+.form{
+  /* float: left;  */
+  text-align: center; 
+}
 .mvhome{
   /* border-radius: 100%; */
 }

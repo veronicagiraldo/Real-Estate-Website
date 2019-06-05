@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import logo from "./logo.svg";
 // import {Link} from 'react-router-dom'
-import { withContext } from './AppContext';
+// import { withContext } from './AppContext';
 import { Link, animateScroll as scroll } from "react-scroll";
 
 // import {Navbar} from 'react-materialize';
@@ -56,6 +56,7 @@ export default class Nav extends Component {
                 offset={-70}
                 duration={500}
               >
+              
                 <i class="fab fa-instagram"></i>
                 <i class="fab fa-facebook-f"></i>
                 <i class="far fa-envelope"></i>
@@ -64,13 +65,13 @@ export default class Nav extends Component {
             {/* <li className="nav-item">
               <Link
                 activeClass="active"
-                to="section4"
+                to="InstaFeed"
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={500}
               >
-                Section 4
+                <i class="fab fa-instagram"></i>
               </Link>
             </li> */}
             {/* <li className="nav-item">

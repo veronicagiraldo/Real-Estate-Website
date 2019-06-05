@@ -1,21 +1,9 @@
 h1, h3 {
   font-size: 30px;
-  /* background: -webkit-linear-gradient( #006064, rgb(3, 43, 46)); */
-  /* -webkit-background-clip: text; */
-  /* -webkit-text-fill-color: transparent; */
 }
-/* .realtylogo {
-  -webkit-align-self: right; 
-  align-self: right;
-} */
 .smile{
   font-size: 20px;
   font-style: italic;
-  /* color: #006064; */
-  /* background: -webkit-linear-gradient( #006064, rgb(3, 43, 46)); */
-  /* -webkit-background-clip: text; */
-  /* -webkit-text-fill-color: transparent; */
-
 }
 img.responsive-img{
   width: 140px;
@@ -28,14 +16,9 @@ img.responsive-img{
   display: inline-block;
 }
 .homeContainer{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  /* background-image: url('./images/couple-investment-key-1288482.jpg'); */
-  /* background-size: cover; */
-  /* background-repeat: no-repeat, repeat; */
+  position: relative;
+  width: 100%;
   opacity: 1;
-
 }
 .overlay{
   position:absolute;
@@ -43,13 +26,9 @@ img.responsive-img{
   left:0;
   right:0;
   bottom:0;
-  background-color:rgba(0, 0, 0, 0.85);
-  background: url(data:;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAABl0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuNUmK/OAAAAATSURBVBhXY2RgYNgHxGAAYuwDAA78AjwwRoQYAAAAAElFTkSuQmCC) repeat scroll transparent\9; /* ie fallback png background image */
-  z-index:9999;
+  background-color:rgba(0, 0, 0, 0.233);
+  /* background: url(data:;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAABl0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuNUmK/OAAAAATSURBVBhXY2RgYNgHxGAAYuwDAA78AjwwRoQYAAAAAElFTkSuQmCC);  */
+  z-index:0;
   color:white;
 }
 
-.home{
-  /* background-color: white; */
-  /* opacity: 0; */
-}

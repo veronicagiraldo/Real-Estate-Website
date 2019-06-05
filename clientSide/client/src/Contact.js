@@ -1,7 +1,8 @@
 import React from 'react';
 import { withContext} from './AppContext';
 import './contact.css';
-import home from './images/mv-home-2.png';
+// import couple2 from './images/pic4.svg';
+// import home from './images/mv-home-2.png';
 
 class Contact extends React.Component{
   constructor(){
@@ -50,21 +51,24 @@ class Contact extends React.Component{
               name='fullName'
               type="text"
               // placeholder="Full Name"
-               /><br></br>
+               />
+               {/*  */}
          Phone Number:<input
               onChange={this.handleChange}
               value={this.state.phone}
               name='phone'
               type="number"
               // placeholder="Phone Number"
-               /><br></br>
+               />
+               {/* <br></br> */}
         Email Address:<input 
               onChange={this.handleChange}
               value={this.state.email}
               name="email"
               type="text"
               // placeholder="email address"
-              /><br></br>
+              />
+              {/* <br></br> */}
         Message:<input 
               onChange={this.handleChange}
               value={this.state.message}
@@ -73,11 +77,12 @@ class Contact extends React.Component{
               placeholder=""
               
               />
-              <br></br>
+              {/* <br></br> */}
       <button class="waves-effect waves-teal btn-flat"type="submit">REQUEST</button>
         </div>
         </form>
         {/* <img className="mvhome"src={home} alt=""/> */}
+        {/* <img className="couple"src={couple2} alt="couple"/> */}
       </div>
     
     )
