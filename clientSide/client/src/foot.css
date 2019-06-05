@@ -1,7 +1,8 @@
 .page-footer{
   background-image: linear-gradient( #006064, #043D41);
-   padding-top: 10px;
+   padding-top: 25px;
    font-size: 14px;
+   padding-left: 10px;
 }
 li {
   font-size: 14px;
@@ -11,6 +12,9 @@ li {
 }
 .row{
   margin-bottom: 5px;
+}
+a{
+  color: white;
 }
 @media only screen and (min-width: 993px){
   .row .col.l3 {

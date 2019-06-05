@@ -13,6 +13,7 @@ import ProtectedRoute from "./Auth/ProtectedRoute";
 import InstaFeed from './InstaFeed';
 import Foot from './Foot';
 import Display from './Auth/Display';
+import Welcome from './Welcome';
 // import NavbarTwo from './NavbarTwo';
 
 
@@ -26,6 +27,7 @@ function App () {
             subtitle={Home}
             dark ={false}
             id="home"/>
+          <Welcome />
           <About 
             title="About"
             subtitle={About}

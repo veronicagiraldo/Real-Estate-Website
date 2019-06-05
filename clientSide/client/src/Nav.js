@@ -13,9 +13,7 @@ export default class Nav extends Component {
     scroll.scrollToTop();
   };
   render() {
-    
     return (
-      
       <nav className="nav" id="navbar">
         <div className="nav-content">
           <img
