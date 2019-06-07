@@ -1,0 +1,20 @@
+img.responsive-img{
+  width: 163px;
+  height: 163px;
+  display: inline-block;
+}
+/* .feed .responsive-img {
+  width: 163px;
+  height: 163px;
+  display: inline-block;
+} */
+/* .instaDisplay .rowTwo{
+  display: flex;
+  justify-content: space-evenly;
+  grid-gap: 5%;
+} */
+/* .instaContainer{
+  display: flex;
+  justify-content: space-evenly;
+  grid-gap: 5%;
+} */

@@ -11,14 +11,14 @@ class Home extends React.Component{
   render(){
     return(
       <div className="homeContainer">
-       <img src={keycouple} alt="home" class="image"/>
-       <div className="overlay">
+       {/* <img src={keycouple} alt="home" class="image"/> */}
+       {/* <div className="overlay"> */}
         <div className="home">
         <h1 className="header">MV Realtors</h1>
            <p class="smile"> Smile!<br></br>…You’re Home!</p>
           </div>
           </div>
-       </div>
+      //  </div>
     )
   }
 }

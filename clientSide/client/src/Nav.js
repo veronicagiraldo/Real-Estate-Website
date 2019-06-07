@@ -23,6 +23,18 @@ export default class Nav extends Component {
             onClick={this.scrollToTop}
           />
           <ul className="nav-items">
+            {/* <li className="nav-item">
+              <Link
+                activeClass="active"
+                to="home"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+               home
+              </Link>
+            </li> */}
             <li className="nav-item">
               <Link
                 activeClass="active"
@@ -57,21 +69,21 @@ export default class Nav extends Component {
                 duration={500}
               >
               
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-facebook-f"></i>
-                <i class="far fa-envelope"></i>
               </Link>
             </li>
+            <li><a href="https://www.instagram.com/mvrealtors/"target="_blank" without rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/RealtorsMV/" target="_blank" without rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></li>
+
             {/* <li className="nav-item">
               <Link
                 activeClass="active"
-                to="InstaFeed"
+                to="welcome"
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={500}
               >
-                <i class="fab fa-instagram"></i>
+                Welcome
               </Link>
             </li> */}
             {/* <li className="nav-item">

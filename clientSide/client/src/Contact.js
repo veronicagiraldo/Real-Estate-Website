@@ -69,13 +69,12 @@ class Contact extends React.Component{
               // placeholder="email address"
               />
               {/* <br></br> */}
-        Message:<input 
+        Message:<textarea 
               onChange={this.handleChange}
               value={this.state.message}
               name="message"
               type="text"
               placeholder=""
-              
               />
               {/* <br></br> */}
       <button class="waves-effect waves-teal btn-flat"type="submit">REQUEST</button>

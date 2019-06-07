@@ -7,6 +7,7 @@ import About from './About';
 import InstaFeed from './InstaFeed';
 import Welcome from './Welcome';
 import Us from './Us';
+import Section from './Section';
 
 import {Switch, Route, Redirect} from 'react-router-dom';
 import Blog from './Blog';
@@ -23,7 +24,6 @@ import Contact from './Contact';
 function App () {
     return (
       <div className="Real-Estate">
-        {/* <NavbarTwo /> */}
           <Nav />
           <Home 
             title="Home"
@@ -31,7 +31,17 @@ function App () {
             dark ={false}
             id="home"/>
           <Welcome />
-          
+          {/* <Section 
+            title="Home"
+            subtitle={Home}
+            id="home"
+            /> */}
+          {/* <Section 
+            title="Welcome"
+            subtitle={Welcome}
+            dark={false}
+            id="welcome"
+            /> */}
           <Form
             title="contact"
             subtitle={Form}
@@ -39,22 +49,22 @@ function App () {
             id="contact"
             />
             <Us />
-            {/* <About 
+            <About 
             title="About"
             subtitle={About}
             dark ={false}
             id="about"
-            /> */}
+            />
           <InstaFeed 
             title="insta"
             subtitle={InstaFeed}
             dark={false}
             id="instafeed"
             />
-          <Switch>
+          {/* <Switch>
             <Route path="/signup" component={Signup}/>
-             <Route path="/login" component={Login}/>
-              <Route exact path="/" render={() => <Redirect to="/home"/>}/>
+            <Route path="/login" component={Login}/>
+            <Route exact path="/" render={() => <Redirect to="/home"/>}/>
             <ProtectedRoute path ="/profile" component={Profile}/>
            <Route exact path ='/home' component ={Home}/>
            <Route path ='/About' component ={About}/>
@@ -63,7 +73,7 @@ function App () {
              <Route path ='/display' component={Display}/>
              <Route path ='/Listing' component={List}/>
               <Route path= '/Us' component={Us}/>
-           </Switch> 
+           </Switch>  */}
           <Foot/>
       
       </div>

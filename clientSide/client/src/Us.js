@@ -7,7 +7,7 @@ import couple2 from './images/pic4.svg';
 const Us = () => {
 return(
   <div class="usContainer">
-      <h5></h5>
+      <h5>Reach us</h5>
       <img className="couple"src={couple2} alt="couple"/>
       <ul class="contactInfo">
           <li><i class="fas fa-user"></i> Misty Vasquez</li>
@@ -18,7 +18,7 @@ return(
           <li><i class="fas fa-at"></i> <a href="mailto: charles.vasquez@realtypath.com" target="_blank" without rel="noopener noreferrer">charles.vasquez@realtypath.com </a></li>
       </ul>   
   {/* <Link className="waves-effect waves-light btn-large" to='/contact'>Click Here</Link> */}
-  <Link to="/contact"><button class="waves-effect waves-light btn-large">email us</button></Link>
+  {/* <Link to="/contact"><button class="waves-effect waves-light btn-large">email us</button></Link> */}
   </div>
   
 )

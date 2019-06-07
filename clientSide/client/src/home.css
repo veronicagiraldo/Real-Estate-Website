@@ -5,7 +5,7 @@ h1, h3 {
   font-size: 20px;
   font-style: italic;
 }
-img.responsive-img{
+/* img.responsive-img{
   width: 140px;
   height: 180px;
   display: inline-block;
@@ -14,7 +14,7 @@ img.responsive-img{
   width: 140px;
   height: 180px;
   display: inline-block;
-}
+} */
 .homeContainer{
   position: relative;
   width: 100%;
