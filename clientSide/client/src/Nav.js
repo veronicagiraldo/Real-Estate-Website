@@ -71,6 +71,7 @@ export default class Nav extends Component {
               
               </Link>
             </li>
+            <li><a href="https://mre.run/APP2624/dashboard"><i class="fas fa-home"></i></a></li>
             <li><a href="https://www.instagram.com/mvrealtors/"target="_blank" without rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
             <li><a href="https://www.facebook.com/RealtorsMV/" target="_blank" without rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></li>
 
