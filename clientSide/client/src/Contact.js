@@ -1,6 +1,7 @@
 import React from 'react';
 import { withContext} from './AppContext';
 import './contact.css';
+// import Us from './Us';
 // import couple2 from './images/pic4.svg';
 // import home from './images/mv-home-2.png';
 
@@ -77,13 +78,14 @@ class Contact extends React.Component{
               placeholder=""
               />
               {/* <br></br> */}
-      <button class="waves-effect waves-teal btn-flat"type="submit">REQUEST</button>
+      <button class="waves-effect waves-light btn-large"type="submit">REQUEST</button>
         </div>
         </form>
         {/* <img className="mvhome"src={home} alt=""/> */}
         {/* <img className="couple"src={couple2} alt="couple"/> */}
+        {/* <Us /> */}
       </div>
-    
+
     )
   }
 }

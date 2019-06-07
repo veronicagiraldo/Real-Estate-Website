@@ -7,7 +7,8 @@ import About from './About';
 import InstaFeed from './InstaFeed';
 import Welcome from './Welcome';
 import Us from './Us';
-import Section from './Section';
+// import Section from './Section';
+import Message from './Message';
 
 import {Switch, Route, Redirect} from 'react-router-dom';
 import Blog from './Blog';
@@ -42,13 +43,13 @@ function App () {
             dark={false}
             id="welcome"
             /> */}
-          <Form
+          {/* <Form
             title="contact"
             subtitle={Form}
             dark={false}
             id="contact"
-            />
-            <Us />
+            /> */}
+            {/* <Us /> */}
             <About 
             title="About"
             subtitle={About}
@@ -61,6 +62,7 @@ function App () {
             dark={false}
             id="instafeed"
             />
+            <Message />
           {/* <Switch>
             <Route path="/signup" component={Signup}/>
             <Route path="/login" component={Login}/>
