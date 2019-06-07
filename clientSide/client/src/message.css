@@ -1,1 +1,8 @@
-.rowC{display:flex; flex-direction:row;}
+.rowC{
+  display:flex; 
+  flex-direction:row;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-right: 1%;
+  padding-left: 2%;
+}

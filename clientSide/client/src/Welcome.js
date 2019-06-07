@@ -24,7 +24,7 @@ const Welcome = (props) => {
   <img className ="misty"src={misty} alt="Misty"/>
   <h5>Misty Vasquez</h5> 
   <p>Misty's passion for serving others, drove her in the direction of Real Estate...</p>
-  <Link href="./about"class="waves-effect waves-light btn-large">Read More</Link>
+  <Link to="./about"class="waves-effect waves-light btn-large">Read More</Link>
   </div>
   </div>
   <div className="column"> 
@@ -32,7 +32,7 @@ const Welcome = (props) => {
   <img className="charles"src={charles} alt="Charles"/>
   <h5>Charles Vasquez</h5>
   <p>Charles's attention to fine detail makes him a focused and thorough Real Estate Agent...</p>
-  <Link class="waves-effect waves-light btn-large" to="/about"><button>read more</button></Link>
+  <Link to="./about"class="waves-effect waves-light btn-large">Read More</Link>
   {/* <a >Read More</a> */}
   </div>
   </div>

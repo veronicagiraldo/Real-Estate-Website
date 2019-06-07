@@ -10,10 +10,10 @@
 .mvhome{
   /* border-radius: 100%; */
 }
-input[type=text]:not(.browser-default),{
+/* input[type=text]:not(.browser-default),{
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
   resize: vertical;
-}
+} */

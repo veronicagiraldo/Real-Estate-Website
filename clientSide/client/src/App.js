@@ -32,6 +32,7 @@ function App () {
             dark ={false}
             id="home"/>
           <Welcome />
+          <Message />
           {/* <Section 
             title="Home"
             subtitle={Home}
@@ -50,19 +51,19 @@ function App () {
             id="contact"
             /> */}
             {/* <Us /> */}
+            <InstaFeed 
+              title="insta"
+              subtitle={InstaFeed}
+              dark={false}
+              id="instafeed"
+              />
             <About 
             title="About"
             subtitle={About}
             dark ={false}
             id="about"
             />
-          <InstaFeed 
-            title="insta"
-            subtitle={InstaFeed}
-            dark={false}
-            id="instafeed"
-            />
-            <Message />
+          
           {/* <Switch>
             <Route path="/signup" component={Signup}/>
             <Route path="/login" component={Login}/>

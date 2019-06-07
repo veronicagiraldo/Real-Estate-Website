@@ -11,7 +11,7 @@ return(
         {/* <Form /> */}
       {/* <h5>Reach us</h5> */}
       <img className="couple"src={couple2} alt="couple"/>
-      <ul class="contactInfo">
+      <ul class="info">
           <li><i class="fas fa-user"></i> Misty Vasquez</li>
           <li><i class="fas fa-phone"></i> 801.897.6430</li>
           <li><i class="fas fa-at"></i> <a href="mailto: misty.vasquez@realtypath.com" target="_blank" without rel="noopener noreferrer">misty.vasquez@realtypath.com</a></li><br></br>

@@ -1,6 +1,6 @@
 .usContainer{
   /* display: inline-block; */
-  background-color:  #E0F2F1;
+  /* background-color:  #E0F2F1; */
   width: 75%;
   color: black;
 }
@@ -16,11 +16,16 @@ li{
 .couple{
   /* width: 33%; */
 }
-.contactInfo{
+.info{
   float: right;
   text-align: left;
   padding-left: 2%;
-  /* font-size: 20px; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  border-radius: 2%;
+  background-color: #E0F2F1;
+  /* background-color: #043D41; //dark teal with white font
+  color: white; */
 }
 .socialIcon{
   display: inline-block;
