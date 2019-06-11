@@ -11,7 +11,7 @@ class Foot extends React.Component{
             <div class="col s12 l3">
             <img class="realtylogo"src={rp}alt="realtypath"/>
           </div>
-    <div class="col s12 l3"><p>Realtypath LLC.</p>
+    <div class="col s12 l3 realty"><p>Realtypath LLC.</p>
         <i class="fas fa-map-marker-alt"></i> 2115 S. Dallin Street<br></br>
                 Salt Lake City, UT 84109
                 </div>
@@ -22,7 +22,7 @@ class Foot extends React.Component{
           <li><i class="fas fa-at"></i> <a href="mailto: misty.vasquez@realtypath.com" target="_blank" without rel="noopener noreferrer">misty.vasquez@realtypath.com</a></li>
           <li><i class="fas fa-user"></i> Charles Vasquez</li>
           <li><i class="fas fa-phone"></i> 801.870.0868</li>
-          <li><i class="fas fa-at"></i> <a href="mailto: charles.vasquez@realtypath.com" target="_blank" without rel="noopener noreferrer">charles.vasquez@realtypath.com </a></li>
+          <li><i class="fas fa-at"></i> <a href="mailto: charles.vasquez@realtypath.com" target="_blank" without rel="noopener noreferrer">charles.vasquez@realtypath.com</a></li>
           </ul>   
       </div>
     <div class="col s12 l3">

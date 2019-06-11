@@ -1,23 +1,41 @@
 .page-footer{
   background-image: linear-gradient( #006064, #043D41);
+  font-size: 20px;
+  /* color: white; */
    padding-top: 25px;
-   font-size: 14px;
-   padding-left: 10px;
+   /* padding-left: 10px; */
 }
-li {
-  font-size: 14px;
+.contactInfo, a {
+  color: white;
+  font-size: 20px;
+  text-align: left;
 }
-.forsale{
-  width: 150px;
-}
-.row{
-  margin-bottom: 5px;
-}
-a{
+ul li a {
+  font-size: 20px;
   color: white;
 }
-@media only screen and (min-width: 993px){
+.forsale{
+  width: 250px;
+}
+.row{
+  /* margin-bottom: 5px; */
+}
+.row .col .l3 .realty{
+  text-align: right;
+}
+.realtylogo{
+  width: 250px;
+}
+/* a{
+  color: white;
+} */
+/* @media only screen and (min-width: 993px){
   .row .col.l3 {
     text-align: left;
   }
+} */
+.row{
+  display: flex;
+  justify-content: space-around;
+
 }
