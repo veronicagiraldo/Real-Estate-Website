@@ -2,6 +2,7 @@ import React from 'react';
 import './foot.css';
 import rp from "./images/headerLogo.png"
 import forsale from './images/mv-home-2.png';
+import Admin from './Auth/Admin';
 
 class Foot extends React.Component{
   render(){
@@ -34,6 +35,7 @@ class Foot extends React.Component{
             MV Realtors © 2019 Copyright
             </div>
           </div>
+          <Admin />
   </footer>
     )
   }

@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const nodemailer = require('nodemailer');
 require('dotenv').config();
 const expressJwt = require('express-jwt');
 const mongoose = require('mongoose')

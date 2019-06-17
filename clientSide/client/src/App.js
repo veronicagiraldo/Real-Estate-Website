@@ -1,24 +1,25 @@
 import React from 'react';
-import Form from './Contact';
+// import Form from './Contact';
 import Nav from './Nav';
 import Home from './Home';
 import Foot from './Foot';
 import About from './About';
 import InstaFeed from './InstaFeed';
 import Welcome from './Welcome';
-import Us from './Us';
+// import Us from './Us';
 // import Section from './Section';
 import Message from './Message';
 
-import {Switch, Route, Redirect} from 'react-router-dom';
-import Blog from './Blog';
-import List from './Listing';
-import Signup from './Auth/Signup';
-import Login from './Auth/Login';
-import Profile from '../src/Auth/Profile'
-import ProtectedRoute from "./Auth/ProtectedRoute";
-import Display from './Auth/Display';
-import Contact from './Contact';
+
+// import {Switch, Route, Redirect} from 'react-router-dom';
+// import Blog from './Blog';
+// import List from './Listing';
+// import Signup from './Auth/Signup';
+// import Login from './Auth/Login';
+// import Profile from '../src/Auth/Profile'
+// import ProtectedRoute from "./Auth/ProtectedRoute";
+// import Display from './Auth/Display';
+// import Contact from './Contact';
 // import NavbarTwo from './NavbarTwo';
 
 
