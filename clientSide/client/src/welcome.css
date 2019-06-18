@@ -1,20 +1,4 @@
-/* .welcomeContainer{
-  display: flex;
-  justify-content: space-between;
-}
-.tab1{
-  background-color: #006064;
-  color: white;
-  border-radius: 2%;
-}
-.tab2{
-  background-color: #E0F2F1;
-  border-radius: 2%;
-}
-.tab3{
-  background-color: #E0F2F1;
-  border-radius: 2%;
-} */
+
 .btn, .btn-large, .btn-small {
   background-color: #006064;
 }

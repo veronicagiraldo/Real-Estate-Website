@@ -1,11 +1,17 @@
-h1{
-  text-align: center;
-  justify-content: center;
-}
 .about{
-  /* width: 98.5%; */
+  text-align: center;
+  font-size: 17px;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-left: 10px;
+  padding-top: 10px;
+  
 }
-
+/* .p{
+  padding-top: 10px;
+  font-size: 16px;
+  padding-right: 15px;
+} */
 .content{
   position: relative;
   width: 30%;

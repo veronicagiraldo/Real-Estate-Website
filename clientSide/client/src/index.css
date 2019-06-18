@@ -40,10 +40,10 @@ body, html{
 input{
   text-align: center;
 }
-.misty, .charles, .couple2{
+/* .misty, .charles, .couple2{
   height: 200px;
   width: 200px;
-}
+} */
 .displayImg{
   height: 100px;
   width: 100px;

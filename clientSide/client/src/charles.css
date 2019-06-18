@@ -1,9 +1,5 @@
-h1{
-  text-align: center;
-  justify-content: center;
-}
 .about{
-  /* width: 98.5%; */
+  padding-bottom: 20px;
 }
 
 .content{
@@ -56,16 +52,10 @@ h1{
   margin-bottom: 0.5em;
   text-transform: uppercase;
 }
-.misty{
-  width: 280px;
-}
 .charles{
   width: 280px;
 }
 .fadeIn-bottom{
   top: 80%;
 }
-.charlesAbout{
-  width: 40%;
-  float: right;
-}
+

@@ -3,7 +3,7 @@ import React from 'react';
 import Nav from './Nav';
 import Home from './Home';
 import Foot from './Foot';
-import About from './About';
+import About from './AboutTwo';
 import InstaFeed from './InstaFeed';
 import Welcome from './Welcome';
 // import Us from './Us';

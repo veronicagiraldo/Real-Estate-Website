@@ -32,7 +32,7 @@ const Welcome = (props) => {
   <img className="charles"src={charles} alt="Charles"/>
   <h5>Charles Vasquez</h5>
   <p>Charles's attention to fine detail makes him a focused and thorough Real Estate Agent...</p>
-  <Link to="./about"class="waves-effect waves-light btn-large">Read More</Link>
+  <Link to="/about"class="waves-effect waves-light btn-large">Read More</Link>
   {/* <a >Read More</a> */}
   </div>
   </div>
