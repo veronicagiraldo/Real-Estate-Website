@@ -27,7 +27,7 @@ class Foot extends React.Component{
           <li><a class="#006064" href="https://www.facebook.com/RealtorsMV/" target="_blank" without rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></li>
           <li><a class="#006064" href="https://www.instagram.com/mvrealtors/" target="_blank" without rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
       </ul>   
-      </div>
+      </div>l
     <div class="col s12 l3">
       <img className="forsale" src={forsale} alt="forsale"/>
       </div>

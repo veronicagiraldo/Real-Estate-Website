@@ -9,6 +9,16 @@ ul li a{
   padding-top: 2%;
 
 }
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; 
+}
+/* .sunny {
+  display: inline-block;
+  text-align: center;
+  justify-content: center;
+} */
 li{
   font-size: 20px;
 }
@@ -27,7 +37,7 @@ li{
   /* background-color: #043D41; //dark teal with white font
   color: white; */
 }
-.socialIcon{
+li .socialIcon{
   display: inline-block;
   font-size: 20px;
 }

@@ -19,9 +19,10 @@ return(
           <li><i class="fas fa-phone"></i> 801.870.0868</li>
           <li><i class="fas fa-at"></i> <a href="mailto: charles.vasquez@realtypath.com" target="_blank" without rel="noopener noreferrer">charles.vasquez@realtypath.com </a></li><br></br>
           <li><a href="https://mre.run/APP2624/dashboard"><i class="fas fa-home"></i></a> Search Listings Here</li>
-          <li><a class="socialIcon" href="https://www.instagram.com/mvrealtors/"target="_blank" without rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
-          <li><a class="socialIcon" href="https://www.facebook.com/RealtorsMV/" target="_blank" without rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></li>
-          
+      <ul class="social">
+          <li class="sunny"> <a class="socialIcon" href="https://www.instagram.com/mvrealtors/"target="_blank" without rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
+          <li class="sunny"> <a class="socialIcon" href="https://www.facebook.com/RealtorsMV/" target="_blank" without rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></li>
+     </ul>
       </ul>   
   {/* <Link className="waves-effect waves-light btn-large" to='/contact'>Click Here</Link> */}
   {/* <Link to="/contact"><button class="waves-effect waves-light btn-large">email us</button></Link> */}
