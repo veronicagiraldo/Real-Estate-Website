@@ -8,10 +8,10 @@ import {Link} from 'react-router-dom';
 // import About from './About';
 
 
-const Welcome = (props) => {
+const Welcome = () => {
  return(
 <div className="row">
-  <div className="column"> 
+  <div className="columnWelcome"> 
   <div className="card">
   <h4>Welcome</h4>
     <p>Our Mission:</p>

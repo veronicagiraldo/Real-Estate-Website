@@ -9,7 +9,7 @@ import Welcome from './Welcome';
 // import Us from './Us';
 // import Section from './Section';
 import Message from './Message';
-
+import './index.css';
 
 // import {Switch, Route, Redirect} from 'react-router-dom';
 // import Blog from './Blog';

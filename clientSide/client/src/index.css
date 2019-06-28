@@ -48,5 +48,8 @@ input{
   height: 100px;
   width: 100px;
 }
-
-
+/* @media only screen and (max-width: 600px){
+  .Real-Estate{
+    width: 95%;
+  }
+} */
