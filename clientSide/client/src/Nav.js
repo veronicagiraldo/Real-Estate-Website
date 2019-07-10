@@ -4,8 +4,6 @@ import logo from "./logo.svg";
 // import { withContext } from './AppContext';
 import { Link, animateScroll as scroll } from "react-scroll";
 
-// import {Navbar} from 'react-materialize';
-// import mvlogo from './images/mvlogosvg.svg'
 import './navbartwo.css';
 
 export default class Nav extends Component {
@@ -23,18 +21,6 @@ export default class Nav extends Component {
             onClick={this.scrollToTop}
           />
           <ul className="nav-items">
-            {/* <li className="nav-item">
-              <Link
-                activeClass="active"
-                to="home"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-               home
-              </Link>
-            </li> */}
             <li className="nav-item">
               <Link
                 activeClass="active"
@@ -68,69 +54,14 @@ export default class Nav extends Component {
                 offset={-70}
                 duration={500}
               >
-              
               </Link>
             </li>
             <li><a href="https://mre.run/APP2624/dashboard"><i class="fas fa-home"></i></a></li>
             <li><a href="https://www.instagram.com/mvrealtors/"target="_blank" without rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
             <li><a href="https://www.facebook.com/RealtorsMV/" target="_blank" without rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></li>
-
-            {/* <li className="nav-item">
-              <Link
-                activeClass="active"
-                to="welcome"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                Welcome
-              </Link>
-            </li> */}
-            {/* <li className="nav-item">
-              <Link
-                activeClass="active"
-                to="section5"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                Section 5
-              </Link>
-            </li> */}
           </ul>
         </div>
       </nav>
     );
   }
 }
-
-// function Nav (){
-  // render(){
-
-  // }
-    // return(
-      // <Navbar>
-      //  <div class="nav-wrapper">
-      //  <a href="#" class="brand-logo right">MV Realtors</a>
-      //  <ul id="nav-mobile" class="left hide-on-med-and-down">
-      //       <li><Link className="navLinks" to='/home' >Home</Link></li>
-      //       <li><Link className="navLinks" to='/about' >About</Link></li>
-      //       <li><Link className="navLinks" to='/contact'>Let's Talk</Link></li>
-      //       <li><a class="#006064" href="https://www.facebook.com/RealtorsMV/" target="_blank" without rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></li>
-      //       <li><a class="#006064" href="https://www.instagram.com/mvrealtors/" target="_blank" without rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
-      //  </ul> 
-      //  </div>
-      //   </Navbar>
-
-//       <div id="navbar">
-//         {/* <a class="active" href="javascript:void(0)">Home</a> */}
-//         <Link className="navLinks" to='/home' >Home</Link>
-//         <Link className="navLinks" to='/about' >About</Link>
-//         <Link className="navLinks" to='/contact'>Let's Talk</Link>
-//       </div>
-//     )
-// }
-    // export default withContext (Nav);
-   

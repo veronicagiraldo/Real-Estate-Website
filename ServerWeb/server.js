@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const nodemailer = require('nodemailer');
+// const nodemailer = require('nodemailer');
 require('dotenv').config();
 const expressJwt = require('express-jwt');
 const mongoose = require('mongoose')
@@ -16,8 +16,9 @@ mongoose.connect('mongodb://localhost:27017/list', {useNewUrlParser: true})
     .catch(err => console.log(err))
 
 app.use('/auth', require("./Routes/authRoutes"));
-// contact route?
+// instagram route
 app.use('/feed', require('./Routes/feedRoutes'))
+
 app.use('/api', expressJwt({secret: process.env.SECRET}));
 app.use('/api/list', require("./Routes/webRoutes"))
 app.use('/contact', require('./Routes/contactRoutes'))

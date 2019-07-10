@@ -8,7 +8,7 @@ class InstaFeed extends React.Component{
 }
   render(){
     const mapfeed = this.props.feed.map((feed, i) => {
-      console.log(feed.images.standard_resolution.url)
+      // console.log(feed.images.standard_resolution.url)
       return<img class="feed responsive-img" src={feed.images.standard_resolution.url} alt={'pic' + i}></img>
     } )
     return(

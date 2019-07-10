@@ -1,12 +1,11 @@
 import React from 'react';
 import {withContext} from '../AppContext'
 import {Link} from 'react-router-dom'
-// import {Switch, Route, Redirect} from 'react-router-dom';
 // import Blog from './Blog';
-// import List from './Listing';
-// import Signup from './Auth/Signup';
-// import Login from './Auth/Login';
-// import Profile from './Auth/Profile'
+// import List from '../Listing.js';
+// import Signup from './Signup';
+// import Login from './Login';
+// import Profile from './Profile'
 // import ProtectedRoute from "./Auth/ProtectedRoute";
 // import Display from '.Auth/Display';
 // import Contact from './Contact';
@@ -14,7 +13,7 @@ import {Link} from 'react-router-dom'
 const Admin = (props) =>{
   return(
 <div>
-  {/* {
+  {
     !props.token? 
     <React.Fragment>
       <Link to="/signup">Sign Up</Link>
@@ -23,7 +22,7 @@ const Admin = (props) =>{
     <React.Fragment>
         <Link to="/listing">Update Listings</Link>
     </React.Fragment>
-  } */}
+  }
 
  { !props.token? 
     <React.Fragment>

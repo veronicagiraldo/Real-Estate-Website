@@ -24,8 +24,10 @@ class UserProvider extends React.Component{
   }
 // instagram feed 
   getInsta = () => {
+    // console.log(111)
     return axios.get('/feed')
-      .then(response => {
+    .then(response => {
+      console.log(response, 111)
         this.setState({feed: response.data.data});
       })
   }

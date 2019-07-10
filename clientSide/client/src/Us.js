@@ -8,8 +8,6 @@ import couple2 from './images/pic4.svg';
 const Us = () => {
 return(
   <div class="usContainer">
-        {/* <Form /> */}
-      {/* <h5>Reach us</h5> */}
       <img className="couple"src={couple2} alt="couple"/>
       <ul class="info">
           <li><i class="fas fa-user"></i> Misty Vasquez</li>
@@ -24,8 +22,6 @@ return(
           <li class="sunny"> <a class="socialIcon" href="https://www.facebook.com/RealtorsMV/" target="_blank" without rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></li>
      </ul>
       </ul>   
-  {/* <Link className="waves-effect waves-light btn-large" to='/contact'>Click Here</Link> */}
-  {/* <Link to="/contact"><button class="waves-effect waves-light btn-large">email us</button></Link> */}
   </div>
   
 )

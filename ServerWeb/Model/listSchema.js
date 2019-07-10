@@ -19,16 +19,6 @@ const listSchema = new Schema ({
     required: true,
     url: ""
   },
-  // picture2: {
-  //   type: String, 
-  //   required: true,
-  //   url: ""
-  // },
-  // picture3: {
-  //   type: String, 
-  //   required: true,
-  //   url: ""
-  // },
    user: {
     type: Schema.Types.ObjectId,
     ref: "User",

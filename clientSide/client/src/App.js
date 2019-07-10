@@ -10,17 +10,19 @@ import Welcome from './Welcome';
 // import Section from './Section';
 import Message from './Message';
 import './index.css';
-
+import Admin from './Auth/Admin';
 // import {Switch, Route, Redirect} from 'react-router-dom';
-// import Blog from './Blog';
-// import List from './Listing';
-// import Signup from './Auth/Signup';
-// import Login from './Auth/Login';
-// import Profile from '../src/Auth/Profile'
-// import ProtectedRoute from "./Auth/ProtectedRoute";
-// import Display from './Auth/Display';
-// import Contact from './Contact';
-// import NavbarTwo from './NavbarTwo';
+
+
+import {Switch, Route, Redirect} from 'react-router-dom';
+import Blog from './Blog';
+import List from './Listing';
+import Signup from './Auth/Signup';
+import Login from './Auth/Login';
+import Profile from '../src/Auth/Profile'
+import ProtectedRoute from "./Auth/ProtectedRoute";
+import Display from './Auth/Display';
+import Contact from './Contact';
 
 
 function App () {
@@ -34,24 +36,6 @@ function App () {
             id="home"/>
           <Welcome />
           <Message />
-          {/* <Section 
-            title="Home"
-            subtitle={Home}
-            id="home"
-            /> */}
-          {/* <Section 
-            title="Welcome"
-            subtitle={Welcome}
-            dark={false}
-            id="welcome"
-            /> */}
-          {/* <Form
-            title="contact"
-            subtitle={Form}
-            dark={false}
-            id="contact"
-            /> */}
-            {/* <Us /> */}
             <InstaFeed 
               title="insta"
               subtitle={InstaFeed}
@@ -65,7 +49,7 @@ function App () {
             id="about"
             />
           
-          {/* <Switch>
+          <Switch>
             <Route path="/signup" component={Signup}/>
             <Route path="/login" component={Login}/>
             <Route exact path="/" render={() => <Redirect to="/home"/>}/>
@@ -76,10 +60,10 @@ function App () {
             <Route path ='/Contact' component={Contact}/>
              <Route path ='/display' component={Display}/>
              <Route path ='/Listing' component={List}/>
-              <Route path= '/Us' component={Us}/>
-           </Switch>  */}
+              {/* <Route path= '/Us' component={Us}/> */}
+           </Switch> 
           <Foot/>
-      
+          <Admin />
       </div>
     );
   }
